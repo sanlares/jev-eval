@@ -1,0 +1,56 @@
+{"id": "N08_000", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_001", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_002", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_003", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_004", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_005", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_006", "label": true, "ambiguous": true, "note": "Asks for 'someone' to look into the account rather than explicitly to talk to a person, but 'someone' still implies human escalation."}
+{"id": "N08_007", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_008", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_009", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_010", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_011", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_012", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_013", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_014", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_015", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_016", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_017", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_018", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_019", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_020", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_021", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_022", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_023", "label": true, "ambiguous": true, "note": "Says 'someone on your end' rather than naming a person explicitly, but the request is clearly for a human to look at the account directly."}
+{"id": "N08_024", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_025", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_026", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_027", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_028", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_029", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_030", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_031", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_032", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_033", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_034", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_035", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_036", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_037", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_038", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_039", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_040", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_041", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_042", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_043", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_044", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_045", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_046", "label": true, "ambiguous": true, "note": "Wants 'someone who can actually see my account and fix it manually', implying a human, though it does not literally say 'talk to a person'."}
+{"id": "N08_047", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_048", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_049", "label": true, "ambiguous": true, "note": "Wants the reservation handled by 'someone who actually has access' rather than explicitly asking to speak with a person, but this still implies human intervention."}
+{"id": "N08_050", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_051", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_052", "label": false, "ambiguous": false, "note": ""}
+{"id": "N08_053", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_054", "label": true, "ambiguous": false, "note": ""}
+{"id": "N08_055", "label": true, "ambiguous": false, "note": ""}

@@ -1,0 +1,428 @@
+{
+ "C01": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which team should handle this customer support ticket?",
+   "criteria": {
+    "account_access": "Login problems, password resets, two-factor authentication, locked or suspended accounts, single sign-on issues",
+    "billing": "Charges, invoices, refunds, payment methods, receipts, plan prices",
+    "bug_report": "Something in the product is broken, throws errors, or behaves incorrectly",
+    "feature_request": "Asks for new functionality or an improvement to how the product works",
+    "cancellation": "Wants to cancel, close the account, stop auto-renewal, or leave the service"
+   }
+  }
+ },
+ "C02": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which emotion does the writer primarily express?",
+   "criteria": {
+    "joy": "Happiness, delight, excitement, gratitude, pride",
+    "sadness": "Sorrow, grief, disappointment, loneliness",
+    "anger": "Irritation, rage, resentment, feeling wronged",
+    "fear": "Worry, anxiety, dread, feeling threatened",
+    "surprise": "Astonishment or shock at something unexpected, without a dominant positive or negative feeling",
+    "disgust": "Revulsion or strong distaste toward something gross or morally repugnant"
+   }
+  }
+ },
+ "C03": {
+  "answer": {
+   "type": "choice",
+   "instructions": "What is the main topic of this news article?",
+   "criteria": {
+    "politics": "Government, elections, legislation, diplomacy, political parties",
+    "sports": "Athletes, teams, matches, tournaments, transfers",
+    "science": "Research discoveries, space, physics, biology, archaeology",
+    "health": "Medicine, diseases, public health, hospitals, nutrition",
+    "technology": "Gadgets, software, the internet, AI, cybersecurity, tech products",
+    "entertainment": "Movies, music, TV, celebrities, games, books, arts",
+    "crime_justice": "Crimes, police investigations, trials, court rulings",
+    "weather_environment": "Weather events, natural disasters, climate, pollution, wildlife conservation"
+   }
+  }
+ },
+ "C04": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which cuisine does this recipe belong to?",
+   "criteria": {
+    "italian": null,
+    "mexican": null,
+    "japanese": null,
+    "indian": null,
+    "french": null,
+    "thai": null,
+    "korean": null,
+    "moroccan": null
+   }
+  }
+ },
+ "C05": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which scientific field does this paper primarily belong to?",
+   "criteria": {
+    "astronomy": null,
+    "ecology": null,
+    "genetics": null,
+    "neuroscience": null,
+    "materials_science": null,
+    "organic_chemistry": null,
+    "climate_science": null,
+    "particle_physics": null,
+    "epidemiology": null,
+    "computer_vision": null,
+    "linguistics": null,
+    "geology": null
+   }
+  }
+ },
+ "C06": {
+  "answer": {
+   "type": "choice",
+   "instructions": "What does the user want the assistant to do?",
+   "criteria": {
+    "lights_on": "Turn lights on",
+    "lights_off": "Turn lights off",
+    "dim_lights": "Change light brightness",
+    "set_thermostat": "Change or set the temperature",
+    "play_music": "Start playing music, a song, artist or playlist",
+    "pause_music": "Pause or stop music that is playing",
+    "volume_up": "Make it louder",
+    "volume_down": "Make it quieter",
+    "set_timer": "Start a countdown timer",
+    "set_alarm": "Set a wake-up or clock alarm",
+    "weather_query": "Ask about the weather or forecast",
+    "add_to_shopping_list": "Add an item to the shopping list",
+    "lock_door": "Lock a door",
+    "unlock_door": "Unlock a door",
+    "start_vacuum": "Start the robot vacuum",
+    "check_camera": "Show or check a security camera feed",
+    "call_contact": "Phone or video-call someone",
+    "read_calendar": "Ask about scheduled events or appointments",
+    "turn_on_tv": "Turn on the TV",
+    "other": "Anything not covered by the options above"
+   }
+  }
+ },
+ "C07": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which specialty department should this patient message be routed to?",
+   "criteria": {
+    "cardiology": "Heart and blood vessels: chest pressure, palpitations, blood pressure",
+    "dermatology": "Skin, hair and nails: rashes, moles, itching, acne",
+    "gastroenterology": "Digestive system: stomach pain, reflux, bowel problems, liver",
+    "neurology": "Brain and nerves: headaches, numbness, seizures, memory, dizziness",
+    "orthopedics": "Bones, joints and muscles: fractures, sprains, back or knee pain",
+    "ophthalmology": "Eyes and vision: blurred vision, eye pain, floaters, red eye"
+   }
+  }
+ },
+ "C08": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which language or technology is this question primarily about?",
+   "criteria": {
+    "python": null,
+    "javascript": null,
+    "sql": null,
+    "rust": null,
+    "java": null,
+    "css": null,
+    "bash": null,
+    "git": null,
+    "docker": null,
+    "r": "The R language",
+    "go": "The Go language",
+    "cpp": "C++"
+   }
+  }
+ },
+ "C09": {
+  "answer": {
+   "type": "choice",
+   "instructions": "How should this forum comment be moderated?",
+   "criteria": {
+    "acceptable": "Normal on-topic contribution, including strong but civil disagreement",
+    "harassment": "Insults, demeans or personally attacks another user",
+    "spam": "Advertising, affiliate links, or unsolicited promotion",
+    "misinformation": "States clearly false factual claims, e.g. health or science myths, as true",
+    "off_topic": "Civil but unrelated to the thread's subject"
+   }
+  }
+ },
+ "C10": {
+  "answer": {
+   "type": "choice",
+   "instructions": "Which aspect of the hotel is this review mainly about?",
+   "criteria": {
+    "cleanliness": "Dirt, hygiene, housekeeping, smells",
+    "staff_service": "Reception, staff attitude, helpfulness, check-in experience",
+    "location": "Neighborhood, distance to attractions, transport, surroundings",
+    "room_comfort": "Bed, room size, furniture, temperature, view",
+    "food": "Breakfast, restaurant, bar, room service",
+    "other": "Anything else (e.g. pool, parking, wifi, gym)"
+   }
+  }
+ },
+ "S01": {
+  "answer": {
+   "type": "score",
+   "instructions": "How severe is the reported bug?",
+   "criteria": [
+    "Cosmetic: a visual or wording problem; functionality is unaffected",
+    "Minor: a feature misbehaves in an edge case or is inconvenient, and an easy workaround exists",
+    "Major: a core feature is broken or gives wrong results for many users; workarounds are painful or partial",
+    "Critical: crash, data loss, security hole, or the whole product is unusable, with no workaround"
+   ]
+  }
+ },
+ "S02": {
+  "answer": {
+   "type": "score",
+   "instructions": "How frustrated is the customer?",
+   "criteria": [
+    "Calm and neutral: no sign of annoyance",
+    "Mildly inconvenienced: slight annoyance but patient and friendly",
+    "Clearly frustrated: complains about the problem and expresses dissatisfaction",
+    "Very frustrated: mentions repeated failures, strong complaints, patience running out",
+    "Furious: hostile, threatens to leave or escalate, may use all caps or insults"
+   ]
+  }
+ },
+ "S03": {
+  "answer": {
+   "type": "score",
+   "instructions": "How formal is the language of this text?",
+   "criteria": [
+    "Very informal: slang, abbreviations, emojis, no capitalization, chat-style",
+    "Casual: relaxed everyday language with contractions and a friendly tone",
+    "Neutral: standard, clear language suitable for most contexts",
+    "Formal: professional register, complete sentences, polite conventions, few contractions",
+    "Very formal: ceremonial or legalistic language, elaborate courtesy, rigid structure"
+   ]
+  }
+ },
+ "S04": {
+  "answer": {
+   "type": "score",
+   "instructions": "What audience is this explanation written for, based on its technical complexity?",
+   "criteria": [
+    "For a young child: everyday words and analogies, no technical terms",
+    "For a general adult audience: a few technical terms, each explained",
+    "For a knowledgeable hobbyist or student: uses field terminology without explaining the basics",
+    "For experts: dense jargon, formulas or specialized notation, assumes deep background"
+   ]
+  }
+ },
+ "S05": {
+  "answer": {
+   "type": "score",
+   "instructions": "How polite is this email request?",
+   "criteria": [
+    "Rude: demanding, insulting, or dismissive",
+    "Curt: blunt demand with no greeting or thanks",
+    "Neutral: plain request with basic courtesy",
+    "Polite: greeting, please/thank you, considerate tone",
+    "Very polite: highly deferential, apologizes for imposing, elaborate gratitude"
+   ]
+  }
+ },
+ "S06": {
+  "answer": {
+   "type": "score",
+   "instructions": "How urgent is this helpdesk request?",
+   "criteria": [
+    "Can wait: a question or minor request with no deadline and little impact",
+    "Soon: affects someone's work or has a deadline within days",
+    "Immediate: work is stopped for many people, a security incident, or a deadline within hours"
+   ]
+  }
+ },
+ "S07": {
+  "answer": {
+   "type": "score",
+   "instructions": "How well does the answer address the question that was asked? (Judge relevance and completeness, not factual accuracy.)",
+   "criteria": [
+    "Does not address the question at all: off-topic or a refusal",
+    "Touches the topic but does not answer what was asked",
+    "Partially answers: addresses the question but misses an important part",
+    "Fully answers the question directly and completely"
+   ]
+  }
+ },
+ "S08": {
+  "answer": {
+   "type": "score",
+   "instructions": "What star rating does this review most likely correspond to?",
+   "criteria": [
+    "1 star: very negative; the product failed or is terrible; would not recommend",
+    "2 stars: mostly negative with a minor positive",
+    "3 stars: mixed or mediocre; pros and cons balance out",
+    "4 stars: mostly positive with minor complaints",
+    "5 stars: enthusiastic, no real complaints"
+   ]
+  }
+ },
+ "S09": {
+  "answer": {
+   "type": "score",
+   "instructions": "How risky is the described outdoor activity for the people involved?",
+   "criteria": [
+    "Negligible risk: routine activity in safe conditions",
+    "Low risk: minor hazards that are well managed",
+    "Elevated risk: notable hazards or missing precautions that could cause injury",
+    "Severe risk: conditions or behavior likely to cause serious injury or death"
+   ]
+  }
+ },
+ "S10": {
+  "answer": {
+   "type": "score",
+   "instructions": "How experienced in the hobby is the person who wrote this post?",
+   "criteria": [
+    "Complete beginner: brand new, does not know basic terminology",
+    "Novice: knows a few basic terms but struggles with fundamentals",
+    "Advanced beginner: understands the basics and is learning to apply them",
+    "Intermediate: comfortable with core techniques, working on refinement",
+    "Advanced amateur: deep technical knowledge, specialized equipment, consistent results",
+    "Semi-professional: occasionally paid for the work, discusses workflow and clients",
+    "Seasoned expert: many years of experience, teaches others, industry-level nuance"
+   ]
+  }
+ },
+ "N01": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Is the customer asking for a refund (their money back)?",
+   "criteria": {
+    "true": "Explicitly or implicitly asks to get their money returned",
+    "false": "Asks for something else (replacement, repair, exchange, store credit, information), or mentions refunds without requesting one"
+   }
+  }
+ },
+ "N02": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Does the text contain personal data that identifies or contacts a specific private individual?",
+   "criteria": {
+    "true": "Contains at least one of: a personal phone number, personal email address, home street address, government ID number, bank or card number, or a full name together with a date of birth",
+    "false": "No such data; first names alone, public figures, company phone numbers, or generic addresses like support@company.com do not count"
+   }
+  }
+ },
+ "N03": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Does the passage contain the information needed to answer the question?",
+   "criteria": {
+    "true": "The answer can be found in or directly inferred from the passage",
+    "false": "The passage does not provide the answer, even if it is on a related topic"
+   }
+  }
+ },
+ "N04": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Is the claim fully supported by the source?",
+   "criteria": {
+    "true": "Everything in the claim is stated in or directly entailed by the source",
+    "false": "The claim contradicts the source, adds details not in it, or overgeneralizes"
+   }
+  }
+ },
+ "N05": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Do the two records describe the same product (same model and same variant)?",
+   "criteria": {
+    "true": "Same product, model and variant, even if written differently",
+    "false": "Different product, model, size, capacity, color or version"
+   }
+  }
+ },
+ "N06": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Is this email a phishing attempt?",
+   "criteria": {
+    "true": "Tries to trick the recipient into revealing credentials, paying, opening a malicious link/attachment, or impersonates someone",
+    "false": "Legitimate email, even if urgent or promotional"
+   }
+  }
+ },
+ "N07": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Does the review mention a problem with shipping or delivery?",
+   "criteria": {
+    "true": "Late, lost, damaged in transit, delivered to the wrong place, or other delivery issues",
+    "false": "No delivery problem (product defects, quality or fit issues do not count)"
+   }
+  }
+ },
+ "N08": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Is the user asking to talk to a human agent?",
+   "criteria": {
+    "true": "Requests a person, live agent, representative or phone call with staff",
+    "false": "Anything else, including complaints about the bot without asking for a person"
+   }
+  }
+ },
+ "N09": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Do these meeting notes assign a specific task to a specific person?",
+   "criteria": {
+    "true": "A named person (or clearly identified individual) is responsible for a concrete action",
+    "false": "No owner for any action (only discussion, decisions, or 'someone should...')"
+   }
+  }
+ },
+ "N10": {
+  "answer": {
+   "type": "noul",
+   "instructions": "Has the main event described in the text already taken place?",
+   "criteria": {
+    "true": "The event actually happened in the past",
+    "false": "The event is planned, expected, hypothetical, cancelled, postponed, or did not happen"
+   }
+  }
+ },
+ "T01": {
+  "sentiment": {
+   "type": "score",
+   "instructions": "How bullish or bearish is this tweet about the stock mentioned, considering both the author's view and the news it reports?",
+   "criteria": [
+    "Strongly bearish: the author's view or the reported news points clearly to a large fall (selling, shorting, severe bad news)",
+    "Mildly bearish: leans negative; suggests some decline or underperformance",
+    "Neutral: no directional implication (routine or in-line news, balanced views, or undecided)",
+    "Mildly bullish: leans positive; suggests some gains",
+    "Strongly bullish: the author's view or the reported news points clearly to a large rise (buying heavily, hype, major good news)"
+   ]
+  },
+  "direction": {
+   "type": "choice",
+   "instructions": "Which direction does this tweet suggest for the stock price?",
+   "criteria": {
+    "bearish": "Suggests the price will go down",
+    "neutral": "No clear direction either way",
+    "bullish": "Suggests the price will go up"
+   }
+  },
+  "expects_rise": {
+   "type": "noul",
+   "instructions": "Does this tweet suggest the stock price will rise?",
+   "criteria": {
+    "true": "The author's view or the reported news points to a price increase",
+    "false": "It points to a decline, or has no clear direction"
+   }
+  }
+ },
+ "H01": {},
+ "H02": {}
+}

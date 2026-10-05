@@ -1,0 +1,13 @@
+# secrets: never commit API keys
+.env
+.env.*
+
+# local environment / caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# scratch outputs (the full-run results in results/jev, results/haiku and results/report.md are meant to be committed)
+results/smoke/
+results/sim_*/

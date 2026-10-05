@@ -1,0 +1,64 @@
+{"id": "S05_000", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "implicit", "length": "medium", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_001", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a document", "writer": null}
+{"id": "S05_002", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a document", "writer": null}
+{"id": "S05_003", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "access to a system", "writer": null}
+{"id": "S05_004", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_005", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a meeting", "writer": null}
+{"id": "S05_006", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_007", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_008", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "access to a system", "writer": null}
+{"id": "S05_009", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a meeting", "writer": null}
+{"id": "S05_010", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a meeting", "writer": null}
+{"id": "S05_011", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "sarcasm", "length": "long", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_012", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "access to a system", "writer": null}
+{"id": "S05_013", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "implicit", "length": "medium", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_014", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_015", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_016", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_017", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a meeting", "writer": null}
+{"id": "S05_018", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a document", "writer": null}
+{"id": "S05_019", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_020", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_021", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "mixed_signals", "length": "long", "subtopic": "a document", "writer": null}
+{"id": "S05_022", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_023", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_024", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_025", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_026", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a document", "writer": null}
+{"id": "S05_027", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_028", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_029", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_030", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_031", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_032", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "access to a system", "writer": null}
+{"id": "S05_033", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_034", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_035", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_036", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_037", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_038", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_039", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "access to a system", "writer": null}
+{"id": "S05_040", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "access to a system", "writer": null}
+{"id": "S05_041", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_042", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_043", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_044", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a refund of a deposit", "writer": null}
+{"id": "S05_045", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_046", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "sarcasm", "length": "long", "subtopic": "a deadline extension", "writer": null}
+{"id": "S05_047", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "mixed_signals", "length": "long", "subtopic": "fixing a mistake", "writer": null}
+{"id": "S05_048", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a recommendation letter", "writer": null}
+{"id": "S05_049", "task_id": "S05", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "feedback on work", "writer": null}
+{"id": "S05_050", "task_id": "S05", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a meeting", "writer": null}
+{"id": "S05_051", "task_id": "S05", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a meeting", "writer": null}
+{"id": "S05_052", "task_id": "S05", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a document", "writer": null}
+{"id": "S05_053", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "access to a system", "writer": null}
+{"id": "S05_054", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a meeting", "writer": null}
+{"id": "S05_055", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "fixing a mistake", "writer": null, "topup": true}
+{"id": "S05_056", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a refund of a deposit", "writer": null, "topup": true}
+{"id": "S05_057", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "access to a system", "writer": null, "topup": true}
+{"id": "S05_058", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "fixing a mistake", "writer": null, "topup": true}
+{"id": "S05_059", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a document", "writer": null, "topup": true}
+{"id": "S05_060", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a document", "writer": null, "topup": true}
+{"id": "S05_061", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a recommendation letter", "writer": null, "topup": true}
+{"id": "S05_062", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a refund of a deposit", "writer": null, "topup": true}
+{"id": "S05_063", "task_id": "S05", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "fixing a mistake", "writer": null, "topup": true}

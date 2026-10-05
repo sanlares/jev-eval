@@ -1,0 +1,63 @@
+{"id": "S03_000", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_001", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_002", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "long_irrelevant", "length": "long", "subtopic": "a complaint", "writer": null}
+{"id": "S03_003", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "an apology", "writer": null}
+{"id": "S03_004", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "an announcement", "writer": null}
+{"id": "S03_005", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an apology", "writer": null}
+{"id": "S03_006", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_007", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "an apology", "writer": null}
+{"id": "S03_008", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "an apology", "writer": null}
+{"id": "S03_009", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "an announcement", "writer": null}
+{"id": "S03_010", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a thank-you message", "writer": null}
+{"id": "S03_011", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "an announcement", "writer": null}
+{"id": "S03_012", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_013", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_014", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_015", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "long_irrelevant", "length": "long", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_016", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_017", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "long_irrelevant", "length": "long", "subtopic": "a complaint", "writer": null}
+{"id": "S03_018", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_019", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "an announcement", "writer": null}
+{"id": "S03_020", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an apology", "writer": null}
+{"id": "S03_021", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a complaint", "writer": null}
+{"id": "S03_022", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_023", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "an announcement", "writer": null}
+{"id": "S03_024", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "distractor", "length": "long", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_025", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_026", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a complaint", "writer": null}
+{"id": "S03_027", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "distractor", "length": "long", "subtopic": "an apology", "writer": null}
+{"id": "S03_028", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_029", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "long_irrelevant", "length": "long", "subtopic": "a complaint", "writer": null}
+{"id": "S03_030", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_031", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "long_irrelevant", "length": "long", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_032", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "long_irrelevant", "length": "long", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_033", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_034", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_035", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a thank-you message", "writer": null}
+{"id": "S03_036", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_037", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "distractor", "length": "short", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_038", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_039", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a complaint", "writer": null}
+{"id": "S03_040", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "distractor", "length": "short", "subtopic": "a thank-you message", "writer": null}
+{"id": "S03_041", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a thank-you message", "writer": null}
+{"id": "S03_042", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a party invitation", "writer": null}
+{"id": "S03_043", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a thank-you message", "writer": null}
+{"id": "S03_044", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a thank-you message", "writer": null}
+{"id": "S03_045", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "distractor", "length": "medium", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_046", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_047", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a note to a colleague", "writer": null}
+{"id": "S03_048", "task_id": "S03", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "mixed_signals", "length": "long", "subtopic": "an apology", "writer": null}
+{"id": "S03_049", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a meeting reschedule", "writer": null}
+{"id": "S03_050", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "an announcement", "writer": null}
+{"id": "S03_051", "task_id": "S03", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "distractor", "length": "medium", "subtopic": "a complaint", "writer": null}
+{"id": "S03_052", "task_id": "S03", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_053", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a request to a landlord", "writer": null}
+{"id": "S03_054", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an announcement", "writer": null}
+{"id": "S03_055", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a thank-you message", "writer": null, "topup": true}
+{"id": "S03_056", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a party invitation", "writer": null, "topup": true}
+{"id": "S03_057", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a complaint", "writer": null, "topup": true}
+{"id": "S03_058", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a complaint", "writer": null, "topup": true}
+{"id": "S03_059", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a thank-you message", "writer": null, "topup": true}
+{"id": "S03_060", "task_id": "S03", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a thank-you message", "writer": null, "topup": true}
+{"id": "S03_061", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a complaint", "writer": null, "topup": true}
+{"id": "S03_062", "task_id": "S03", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a complaint", "writer": null, "topup": true}

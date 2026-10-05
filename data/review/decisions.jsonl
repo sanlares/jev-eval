@@ -1,0 +1,377 @@
+{"id": "S08_001", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_005", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_006", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_009", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_013", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_015", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_021", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_030", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_042", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_053", "action": "keep", "reason": "verifier agrees; flagged only for possible +-1 adjacent level; intended level is the most defensible reading", "source": "queue"}
+{"id": "S08_020", "action": "relabel", "label": 1, "reason": "tent leaks all night (core failure); setup/stakes are minor positives -> 2 stars, not 3", "source": "queue"}
+{"id": "S08_046", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S08_002", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N01_018", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N01_038", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N01_023", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C01_003", "action": "keep", "reason": "verifier agrees; intended label matches the explicit primary request/criteria", "source": "queue"}
+{"id": "C01_006", "action": "keep", "reason": "verifier agrees; intended label matches the explicit primary request/criteria", "source": "queue"}
+{"id": "C01_017", "action": "keep", "reason": "verifier agrees; intended label matches the explicit primary request/criteria", "source": "queue"}
+{"id": "C01_041", "action": "keep", "reason": "verifier agrees; intended label matches the explicit primary request/criteria", "source": "queue"}
+{"id": "C01_051", "action": "keep", "reason": "verifier agrees; intended label matches the explicit primary request/criteria", "source": "queue"}
+{"id": "C01_052", "action": "keep", "reason": "verifier agrees; intended label matches the explicit primary request/criteria", "source": "queue"}
+{"id": "C01_040", "action": "drop", "reason": "repeated forced sign-outs is genuinely borderline between account_access and bug_report", "source": "queue"}
+{"id": "C01_024", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C01_009", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C06_050", "action": "keep", "reason": "'is it gonna hold up out there' is a forecast request", "source": "queue"}
+{"id": "C06_049", "action": "drop", "reason": "two requests (dim now, lights off in 20 min); no single primary intent", "source": "queue"}
+{"id": "N07_016", "action": "keep", "reason": "courier left plant in heat at mailbox -> delivery problem", "source": "queue"}
+{"id": "N07_031", "action": "keep", "reason": "worry was hypothetical; arrived on time", "source": "queue"}
+{"id": "N07_050", "action": "drop", "reason": "'came out of the box cracked' could be transit or manufacturing damage", "source": "queue"}
+{"id": "N07_054", "action": "drop", "reason": "delayed store pickup is not clearly a shipping/delivery problem", "source": "queue"}
+{"id": "C06_012", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C06_002", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C06_031", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N07_052", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N07_042", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N07_038", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C07_020", "action": "keep", "reason": "primary complaint is a persistent headache -> neurology", "source": "queue"}
+{"id": "C07_025", "action": "drop", "reason": "positional dizziness on standing is borderline neurology vs cardiology (orthostatic)", "source": "queue"}
+{"id": "C08_004", "action": "keep", "reason": "author states failure is a Go module checksum issue, not Docker", "source": "queue"}
+{"id": "C08_012", "action": "keep", "reason": "custom properties + prefers-color-scheme: CSS question", "source": "queue"}
+{"id": "C08_023", "action": "drop", "reason": "no language cue: 'data frame' + vectorization fits Python and R equally", "source": "queue"}
+{"id": "C08_035", "action": "drop", "reason": "no language cue: 'data frame' + merge + vectorization fits Python and R equally", "source": "queue"}
+{"id": "C09_012", "action": "keep", "reason": "asserts unsafe water-bath canning of pumpkin as fine: misinformation", "source": "queue"}
+{"id": "C09_022", "action": "keep", "reason": "sarcastically asserts debunked sugar-hyperactivity claim: misinformation", "source": "queue"}
+{"id": "C09_028", "action": "drop", "reason": "verifier: acceptable; genuine-sounding recommendation vs promotion is borderline", "source": "queue"}
+{"id": "C10_019", "action": "keep", "reason": "closing makes room the main point", "source": "queue"}
+{"id": "C10_028", "action": "keep", "reason": "punchline is the gym (other)", "source": "queue"}
+{"id": "C10_052", "action": "keep", "reason": "plunge pool/shower/bed described as part of the room", "source": "queue"}
+{"id": "S01_003", "action": "keep", "reason": "easy workaround exists -> minor", "source": "queue"}
+{"id": "S01_004", "action": "keep", "reason": "core mode broken for many users -> major", "source": "queue"}
+{"id": "S01_022", "action": "keep", "reason": "wrong totals for many users -> major", "source": "queue"}
+{"id": "S01_024", "action": "keep", "reason": "wrong prices charged (not crash/data loss/security) -> major", "source": "queue"}
+{"id": "S01_027", "action": "drop", "reason": "email timing change is not a visual/wording issue; cosmetic vs minor unclear", "source": "queue"}
+{"id": "S01_041", "action": "keep", "reason": "silent overwrite of unsaved edits = data loss -> critical", "source": "queue"}
+{"id": "S01_049", "action": "relabel", "label": 3, "reason": "a third of messages permanently lost = data loss -> critical per rubric", "source": "queue"}
+{"id": "S02_002", "action": "keep", "reason": "clearly frustrated, calm tone", "source": "queue"}
+{"id": "S02_012", "action": "keep", "reason": "repeated failure + threat to stop ordering -> 3", "source": "queue"}
+{"id": "S02_013", "action": "keep", "reason": "explicit dissatisfaction -> 2", "source": "queue"}
+{"id": "S02_017", "action": "relabel", "label": 0, "reason": "no annoyance expressed, 'no complaints' -> calm", "source": "queue"}
+{"id": "S02_022", "action": "drop", "reason": "calm vs mild concern about large charge is borderline 0/1", "source": "queue"}
+{"id": "S02_024", "action": "keep", "reason": "complains, wants it fixed -> 2", "source": "queue"}
+{"id": "S02_025", "action": "relabel", "label": 0, "reason": "no annoyance expressed -> calm", "source": "queue"}
+{"id": "S02_026", "action": "keep", "reason": "implicit clear frustration -> 2", "source": "queue"}
+{"id": "S02_037", "action": "keep", "reason": "repeated failures, patience running out -> 3", "source": "queue"}
+{"id": "S02_038", "action": "keep", "reason": "sarcastic, repeated -> 3", "source": "queue"}
+{"id": "S02_039", "action": "keep", "reason": "sarcastic complaint -> 2", "source": "queue"}
+{"id": "S02_041", "action": "drop", "reason": "implicit worry: 1 vs 2 borderline", "source": "queue"}
+{"id": "S02_042", "action": "keep", "reason": "repeated failures, used all vacation days -> 3", "source": "queue"}
+{"id": "S02_045", "action": "relabel", "label": 3, "reason": "repeated failures + 'more times than I can count' -> patience running out", "source": "queue"}
+{"id": "S02_046", "action": "relabel", "label": 0, "reason": "'not a big deal for me' -> calm", "source": "queue"}
+{"id": "S02_050", "action": "drop", "reason": "inconvenienced but no annoyance expressed: 0/1 borderline", "source": "queue"}
+{"id": "S02_053", "action": "keep", "reason": "repeated failure, patience running out -> 3", "source": "queue"}
+{"id": "S02_054", "action": "relabel", "label": 0, "reason": "'not too worried', purely curious -> calm", "source": "queue"}
+{"id": "N02_010", "action": "keep", "reason": "home location given as street corner + building -> identifies residence", "source": "queue"}
+{"id": "N06_000", "action": "drop", "reason": "incoherent item: body written from the victim's perspective", "source": "queue"}
+{"id": "N06_003", "action": "keep", "reason": "BEC: secrecy, urgency, bypass process, lookalike domain", "source": "queue"}
+{"id": "N06_012", "action": "keep", "reason": "portal on non-company domain asking to re-enter password", "source": "queue"}
+{"id": "N06_020", "action": "keep", "reason": "asks to reply with SSN and DOB", "source": "queue"}
+{"id": "N06_055", "action": "drop", "reason": "fee-before-redelivery link on plausible carrier domain: phishing vs legit is borderline", "source": "queue"}
+{"id": "N08_006", "action": "keep", "reason": "'can someone actually look into my account instead of the bot' -> human", "source": "queue"}
+{"id": "N08_023", "action": "keep", "reason": "asks for someone on their end, not more troubleshooting -> human", "source": "queue"}
+{"id": "N08_046", "action": "keep", "reason": "asks for someone who can fix it manually -> human", "source": "queue"}
+{"id": "N08_049", "action": "keep", "reason": "asks for someone with access to the reservation system -> human", "source": "queue"}
+{"id": "N09_009", "action": "keep", "reason": "only a hedge ('might'), no firm owner", "source": "queue"}
+{"id": "N09_047", "action": "keep", "reason": "'maybe if she has time', no firm owner", "source": "queue"}
+{"id": "C07_016", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C07_009", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C07_041", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C08_042", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C08_049", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C08_061", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C09_035", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C09_047", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C09_005", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C10_005", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C10_009", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C10_041", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S01_028", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S01_043", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S01_040", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S02_027", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S02_015", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N02_053", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N02_037", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N02_036", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N06_030", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N06_001", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N06_039", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N08_025", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N08_024", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N08_053", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N09_004", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N09_022", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N09_037", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H02_005", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (red car)", "source": "queue"}
+{"id": "H02_030", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (left-handed)", "source": "queue"}
+{"id": "H02_047", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (left-handed)", "source": "queue"}
+{"id": "H02_031", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (blue kitchen)", "source": "queue"}
+{"id": "H02_029", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (owns a cat)", "source": "queue"}
+{"id": "H02_040", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (just applied -> likely not yet approved)", "source": "queue"}
+{"id": "H02_000", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (mentioning a specific topic is a priori unlikely)", "source": "queue"}
+{"id": "H02_012", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (trash trucks are usually on time)", "source": "queue"}
+{"id": "H02_038", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (most car seats fit a CR-V)", "source": "queue"}
+{"id": "H02_059", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (most vacuums work on hardwood)", "source": "queue"}
+{"id": "H02_027", "action": "drop", "reason": "verifier reads an implicit 'no' ('talked about nothing in particular')", "source": "queue"}
+{"id": "H02_052", "action": "drop", "reason": "verifier reads an implicit 'no'", "source": "queue"}
+{"id": "H02_064", "action": "drop", "reason": "verifier reads an implicit 'no' (heirloom recipe kept unchanged)", "source": "queue"}
+{"id": "S09_000", "action": "keep", "reason": "notable heat/support gap, partially mitigated -> elevated", "source": "queue"}
+{"id": "S09_001", "action": "keep", "reason": "unchecked anchors + novice leader -> elevated", "source": "queue"}
+{"id": "S09_003", "action": "keep", "reason": "fast current + drop-off near kids -> elevated", "source": "queue"}
+{"id": "S09_005", "action": "relabel", "label": 1, "reason": "climbing with certified guide and redundant systems: hazards well managed, but not a routine activity -> low", "source": "queue"}
+{"id": "S09_009", "action": "relabel", "label": 3, "reason": "exposed above treeline with thunderstorms forecast at start time, no rain gear -> severe (lightning)", "source": "queue"}
+{"id": "S09_010", "action": "keep", "reason": "bear activity + improper food storage -> elevated", "source": "queue"}
+{"id": "S09_011", "action": "drop", "reason": "cold night with proper gear: negligible vs low is borderline", "source": "queue"}
+{"id": "S09_013", "action": "keep", "reason": "several gaps, both annotators say elevated", "source": "queue"}
+{"id": "S09_015", "action": "drop", "reason": "35 mph crosswind gusts on narrow viaduct: elevated vs severe borderline", "source": "queue"}
+{"id": "S09_016", "action": "drop", "reason": "safe pond outing: negligible vs low borderline", "source": "queue"}
+{"id": "S09_019", "action": "keep", "reason": "minor wind hazard managed -> low", "source": "queue"}
+{"id": "S09_023", "action": "keep", "reason": "no beacon, moderate advisory, gentle slopes -> elevated", "source": "queue"}
+{"id": "S09_032", "action": "keep", "reason": "untested snow bridge -> elevated", "source": "queue"}
+{"id": "S09_034", "action": "keep", "reason": "tide cutting off walkway -> elevated", "source": "queue"}
+{"id": "S09_036", "action": "keep", "reason": "ill-fitting vests + open-water wind -> elevated", "source": "queue"}
+{"id": "S09_037", "action": "drop", "reason": "easy trail with railing: negligible vs low borderline", "source": "queue"}
+{"id": "S09_042", "action": "drop", "reason": "paved greenway with lights: negligible vs low borderline", "source": "queue"}
+{"id": "S09_044", "action": "keep", "reason": "no guardrail + loose gravel, boots advised -> elevated", "source": "queue"}
+{"id": "S09_048", "action": "keep", "reason": "routine supervised swim -> negligible", "source": "queue"}
+{"id": "S09_050", "action": "keep", "reason": "minor risks managed -> low", "source": "queue"}
+{"id": "S09_051", "action": "keep", "reason": "no avalanche gear in variable terrain -> elevated (both annotators)", "source": "queue"}
+{"id": "S09_053", "action": "drop", "reason": "well-planned run, one managed hazard: negligible vs low borderline", "source": "queue"}
+{"id": "S09_056", "action": "relabel", "label": 3, "reason": "mile swim with rip current advisory and no lifeguard -> severe", "source": "queue"}
+{"id": "S10_002", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_005", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_009", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_015", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_016", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_020", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_021", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_023", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_025", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_028", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_031", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_038", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_041", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_042", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_045", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "S10_056", "action": "keep", "reason": "7-level scale: intended level defensible; any disagreement is only +-1", "source": "queue"}
+{"id": "C02_005", "action": "keep", "reason": "payoff is disgust", "source": "queue"}
+{"id": "C02_007", "action": "keep", "reason": "physical disgust imagery", "source": "queue"}
+{"id": "C02_017", "action": "keep", "reason": "anxious behaviour -> fear", "source": "queue"}
+{"id": "C02_022", "action": "keep", "reason": "relief/joy dominates", "source": "queue"}
+{"id": "C02_031", "action": "keep", "reason": "sarcasm masking grief", "source": "queue"}
+{"id": "C02_034", "action": "keep", "reason": "loss -> sadness", "source": "queue"}
+{"id": "C02_037", "action": "keep", "reason": "understated sadness", "source": "queue"}
+{"id": "C02_040", "action": "drop", "reason": "amused delight vs surprise borderline (verifier: joy)", "source": "queue"}
+{"id": "C02_042", "action": "keep", "reason": "mock anger, actual joy", "source": "queue"}
+{"id": "C02_043", "action": "keep", "reason": "dread dominates", "source": "queue"}
+{"id": "C02_048", "action": "keep", "reason": "grossed out -> disgust", "source": "queue"}
+{"id": "C02_051", "action": "drop", "reason": "shock at a clearly positive event: surprise vs joy borderline under the criteria", "source": "queue"}
+{"id": "C02_052", "action": "keep", "reason": "astonishment is the whole point", "source": "queue"}
+{"id": "C03_013", "action": "drop", "reason": "university materials research on batteries: science vs technology", "source": "queue"}
+{"id": "C03_016", "action": "keep", "reason": "medical toll is the story", "source": "queue"}
+{"id": "C03_021", "action": "keep", "reason": "arrest and charges", "source": "queue"}
+{"id": "C03_023", "action": "keep", "reason": "product unveiling", "source": "queue"}
+{"id": "C03_028", "action": "keep", "reason": "record heat", "source": "queue"}
+{"id": "C03_032", "action": "drop", "reason": "glacier-thinning research: science vs weather_environment", "source": "queue"}
+{"id": "C03_043", "action": "drop", "reason": "esports: sports vs entertainment (games)", "source": "queue"}
+{"id": "C03_049", "action": "keep", "reason": "digital ID tech rollout", "source": "queue"}
+{"id": "C03_052", "action": "keep", "reason": "scientific discovery framing", "source": "queue"}
+{"id": "C03_054", "action": "keep", "reason": "air quality event", "source": "queue"}
+{"id": "N03_012", "action": "keep", "reason": "ten-day figure is for withdrawal, not appeals", "source": "queue"}
+{"id": "N03_018", "action": "keep", "reason": "burned building is a different one", "source": "queue"}
+{"id": "N03_020", "action": "drop", "reason": "verifier reads the 1900 estimate as answering; borderline", "source": "queue"}
+{"id": "N03_027", "action": "drop", "reason": "flat $9 fee arguably implies 'no free Sundays'", "source": "queue"}
+{"id": "N03_034", "action": "drop", "reason": "verifier infers not nocturnal from eye note; borderline", "source": "queue"}
+{"id": "N03_047", "action": "keep", "reason": "maintenance status not stated", "source": "queue"}
+{"id": "N04_048", "action": "keep", "reason": "claim matches hedged forecast", "source": "queue"}
+{"id": "N05_015", "action": "keep", "reason": "unit conversions do not reconcile -> different listing", "source": "queue"}
+{"id": "N05_017", "action": "drop", "reason": "same tire but single vs set of four: identity under the criteria is debatable", "source": "queue"}
+{"id": "N05_019", "action": "drop", "reason": "same tire but new vs used and single vs set: debatable", "source": "queue"}
+{"id": "N05_027", "action": "drop", "reason": "same tire but single vs set and condition differences: debatable", "source": "queue"}
+{"id": "N05_047", "action": "keep", "reason": "weight does not reconcile -> different listing", "source": "queue"}
+{"id": "N10_012", "action": "keep", "reason": "race never started", "source": "queue"}
+{"id": "N10_034", "action": "keep", "reason": "show called off", "source": "queue"}
+{"id": "N10_047", "action": "keep", "reason": "ceremony interrupted before it happened", "source": "queue"}
+{"id": "C04_056", "action": "keep", "reason": "jok moo toppings -> thai", "source": "queue"}
+{"id": "S03_008", "action": "keep", "reason": "casual with one formal sentence", "source": "queue"}
+{"id": "S03_013", "action": "keep", "reason": "ceremonial invitation with one casual aside -> formal", "source": "queue"}
+{"id": "S03_015", "action": "drop", "reason": "neutral vs casual letter: borderline", "source": "queue"}
+{"id": "S03_016", "action": "keep", "reason": "legalistic notice with parenthetical -> very formal", "source": "queue"}
+{"id": "S03_025", "action": "relabel", "label": 3, "reason": "formal professional request, not ceremonial/legalistic", "source": "queue"}
+{"id": "S03_026", "action": "relabel", "label": 3, "reason": "formal complaint, not ceremonial/legalistic", "source": "queue"}
+{"id": "S03_027", "action": "drop", "reason": "neutral vs casual: borderline", "source": "queue"}
+{"id": "S03_030", "action": "relabel", "label": 1, "reason": "contractions + friendly invitation -> casual", "source": "queue"}
+{"id": "S03_035", "action": "drop", "reason": "neutral vs casual thanks: borderline", "source": "queue"}
+{"id": "S03_043", "action": "drop", "reason": "neutral with casual aside: borderline", "source": "queue"}
+{"id": "S03_048", "action": "keep", "reason": "texting style dominates", "source": "queue"}
+{"id": "S03_050", "action": "keep", "reason": "casual with one formal clause", "source": "queue"}
+{"id": "S03_051", "action": "keep", "reason": "formal letter quoting casual phrase", "source": "queue"}
+{"id": "S04_002", "action": "keep", "reason": "field terms used without definitions -> hobbyist", "source": "queue"}
+{"id": "S04_008", "action": "keep", "reason": "dense unexplained jargon in the explanation", "source": "queue"}
+{"id": "S04_014", "action": "keep", "reason": "terms named and defined -> general adult", "source": "queue"}
+{"id": "S04_024", "action": "drop", "reason": "plain explainer embedded in jargon-heavy report: borderline", "source": "queue"}
+{"id": "S04_031", "action": "drop", "reason": "'space robots' + undefined terms: child vs general adult borderline", "source": "queue"}
+{"id": "S04_049", "action": "relabel", "label": 3, "reason": "pseudorange, ionospheric delay, clock bias unknown -> expert density", "source": "queue"}
+{"id": "S04_051", "action": "keep", "reason": "plain, no terms", "source": "queue"}
+{"id": "S04_053", "action": "keep", "reason": "plughole analogy, no terms", "source": "queue"}
+{"id": "S04_056", "action": "keep", "reason": "hobbyist explanation", "source": "queue"}
+{"id": "S04_057", "action": "keep", "reason": "unexplained routing terms", "source": "queue"}
+{"id": "S06_000", "action": "keep", "reason": "days before anything happens -> soon", "source": "queue"}
+{"id": "S06_012", "action": "drop", "reason": "'tomorrow 9am' deadline: days vs hours borderline", "source": "queue"}
+{"id": "S06_042", "action": "keep", "reason": "cosmetic issue, days-away deadline -> soon", "source": "queue"}
+{"id": "T01_002", "action": "keep", "reason": "mild lean negative", "source": "queue"}
+{"id": "T01_005", "action": "keep", "reason": "author strongly bullish against news", "source": "queue"}
+{"id": "T01_048", "action": "keep", "reason": "measured positive -> mildly bullish", "source": "queue"}
+{"id": "T01_050", "action": "drop", "reason": "full exit on options-flow signal: strong vs mild bearish borderline", "source": "queue"}
+{"id": "T01_056", "action": "keep", "reason": "bullish flow note -> mild", "source": "queue"}
+{"id": "T01_060", "action": "drop", "reason": "adding to core position on call flow: mild vs strong bullish borderline", "source": "queue"}
+{"id": "T01_061", "action": "keep", "reason": "minor fine, negative framing -> mild", "source": "queue"}
+{"id": "T01_064", "action": "keep", "reason": "plant destroyed, thesis broken -> strong", "source": "queue"}
+{"id": "T01_078", "action": "keep", "reason": "buyback filing -> mildly bullish", "source": "queue"}
+{"id": "T01_088", "action": "keep", "reason": "heavy puts + move to Sell -> strong", "source": "queue"}
+{"id": "T01_091", "action": "keep", "reason": "safety failures, indefinite delay -> strong", "source": "queue"}
+{"id": "T01_109", "action": "drop", "reason": "full exit on undescribed lawsuit: strong vs mild borderline", "source": "queue"}
+{"id": "T01_110", "action": "drop", "reason": "strong news but nervous starter position: mild vs strong borderline", "source": "queue"}
+{"id": "T01_147", "action": "keep", "reason": "Sell + estimate cuts -> strong", "source": "queue"}
+{"id": "T01_149", "action": "keep", "reason": "adding to short -> strong", "source": "queue"}
+{"id": "T01_164", "action": "keep", "reason": "full exit, plant dark -> strong", "source": "queue"}
+{"id": "C02_046", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C02_023", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C03_051", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C03_036", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C04_017", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C04_012", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C04_016", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S03_012", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S03_044", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S04_005", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S04_010", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S06_051", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S06_035", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S06_055", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S09_040", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S09_038", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S10_046", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S10_006", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N03_033", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N03_025", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N04_022", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N04_019", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N04_041", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N05_021", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N05_041", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N05_028", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N10_031", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N10_040", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "N10_028", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_026", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_000", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_045", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_162", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_126", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_080", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "T01_152", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H02_015", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H02_003", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H02_066", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C05_016", "action": "keep", "reason": "core finding is brain white matter/cognition", "source": "queue"}
+{"id": "C05_022", "action": "drop", "reason": "soil CO2 mesocosms: ecology vs climate_science", "source": "queue"}
+{"id": "C05_046", "action": "keep", "reason": "conclusion centers on geological controls", "source": "queue"}
+{"id": "C05_050", "action": "keep", "reason": "exposure is genetic variant status", "source": "queue"}
+{"id": "C05_060", "action": "keep", "reason": "core innovation is DNA sequencing device", "source": "queue"}
+{"id": "S05_000", "action": "drop", "reason": "considerate but no greeting/thanks: neutral vs polite borderline", "source": "queue"}
+{"id": "S05_002", "action": "keep", "reason": "plain request with sarcastic opener", "source": "queue"}
+{"id": "S05_003", "action": "keep", "reason": "please + thanks", "source": "queue"}
+{"id": "S05_006", "action": "relabel", "label": 3, "reason": "rubric: greeting + please/thanks + considerate tone = polite (3)", "source": "queue"}
+{"id": "S05_011", "action": "drop", "reason": "passive-aggressive sarcasm: rude vs curt borderline", "source": "queue"}
+{"id": "S05_016", "action": "keep", "reason": "deferential -> very polite", "source": "queue"}
+{"id": "S05_017", "action": "keep", "reason": "blunt demand, no greeting/thanks -> curt", "source": "queue"}
+{"id": "S05_018", "action": "drop", "reason": "greeting + could you, closing unclear: neutral vs polite borderline", "source": "queue"}
+{"id": "S05_019", "action": "relabel", "label": 3, "reason": "rubric: greeting + please/thanks + considerate tone = polite (3)", "source": "queue"}
+{"id": "S05_020", "action": "keep", "reason": "blunt -> curt", "source": "queue"}
+{"id": "S05_022", "action": "keep", "reason": "blunt -> curt", "source": "queue"}
+{"id": "S05_024", "action": "keep", "reason": "blunt -> curt", "source": "queue"}
+{"id": "S05_027", "action": "relabel", "label": 3, "reason": "rubric: greeting + please/thanks + considerate tone = polite (3)", "source": "queue"}
+{"id": "S05_029", "action": "keep", "reason": "thanks present -> polite", "source": "queue"}
+{"id": "S05_031", "action": "keep", "reason": "polite, no apology for imposing", "source": "queue"}
+{"id": "S05_036", "action": "drop", "reason": "greeting + could you, no thanks: neutral vs polite borderline", "source": "queue"}
+{"id": "S05_037", "action": "drop", "reason": "scolding demand: rude vs curt borderline", "source": "queue"}
+{"id": "S05_038", "action": "keep", "reason": "blames recipient -> rude", "source": "queue"}
+{"id": "S05_042", "action": "relabel", "label": 3, "reason": "rubric: greeting + please/thanks + considerate tone = polite (3)", "source": "queue"}
+{"id": "S05_044", "action": "relabel", "label": 3, "reason": "rubric: greeting + please/thanks + considerate tone = polite (3)", "source": "queue"}
+{"id": "S05_048", "action": "keep", "reason": "greeting, no please/thanks -> neutral (both annotators)", "source": "queue"}
+{"id": "S05_050", "action": "keep", "reason": "apologizes for imposing -> very polite", "source": "queue"}
+{"id": "S05_052", "action": "keep", "reason": "curt", "source": "queue"}
+{"id": "S05_053", "action": "relabel", "label": 3, "reason": "rubric: greeting + please/thanks + considerate tone = polite (3)", "source": "queue"}
+{"id": "H01_006", "action": "keep", "reason": "ingredients hint at heat but spiciness never stated", "source": "queue"}
+{"id": "H01_012", "action": "keep", "reason": "umbrellas + ironic 'sunny' -> rainy", "source": "queue"}
+{"id": "H01_021", "action": "keep", "reason": "warm and clingy child -> sick", "source": "queue"}
+{"id": "H01_032", "action": "keep", "reason": "several options fit (pregnancy, stomach bug) -> cannot determine", "source": "queue"}
+{"id": "H01_034", "action": "keep", "reason": "rooftop use, loud, long range -> large outdoor gathering", "source": "queue"}
+{"id": "H01_036", "action": "drop", "reason": "text strongly implies benching; not a clean unanswerable item", "source": "queue"}
+{"id": "H01_048", "action": "keep", "reason": "celebration + opponent signs down -> won", "source": "queue"}
+{"id": "H01_051", "action": "keep", "reason": "policy reminder, no statement about today", "source": "queue"}
+{"id": "H01_055", "action": "keep", "reason": "price skepticism, quality never stated", "source": "queue"}
+{"id": "H01_063", "action": "drop", "reason": "'special order -> likely delayed' relies on world knowledge, not the text", "source": "queue"}
+{"id": "S07_005", "action": "drop", "reason": "buried one-liner partly answers: 1 vs 2 borderline", "source": "queue"}
+{"id": "S07_006", "action": "keep", "reason": "about searing, not resting -> touches topic", "source": "queue"}
+{"id": "S07_009", "action": "drop", "reason": "covers visa + vaccines; partial vs full unclear", "source": "queue"}
+{"id": "S07_012", "action": "keep", "reason": "clear recommendation amid rambling", "source": "queue"}
+{"id": "S07_015", "action": "relabel", "label": 1, "reason": "talks about French/Italian generally, not grammar -> touches topic", "source": "queue"}
+{"id": "S07_018", "action": "relabel", "label": 1, "reason": "soil chemistry without pH target or method -> touches topic", "source": "queue"}
+{"id": "S07_021", "action": "drop", "reason": "two likely causes given: partial vs full borderline", "source": "queue"}
+{"id": "S07_022", "action": "keep", "reason": "London, no transport info -> touches topic", "source": "queue"}
+{"id": "S07_030", "action": "relabel", "label": 3, "reason": "both parts answered (habits + 10% rule)", "source": "queue"}
+{"id": "S07_031", "action": "drop", "reason": "both parts answered implicitly: partial vs full", "source": "queue"}
+{"id": "S07_037", "action": "keep", "reason": "hint only, no answer -> touches topic", "source": "queue"}
+{"id": "S07_038", "action": "drop", "reason": "vague causes, no fix: 1 vs 2 borderline", "source": "queue"}
+{"id": "S07_041", "action": "keep", "reason": "cause + fix, safety question unanswered -> partial", "source": "queue"}
+{"id": "S07_043", "action": "drop", "reason": "diet yes, supplements only implicit: 2 vs 3", "source": "queue"}
+{"id": "S07_046", "action": "keep", "reason": "joke only -> touches topic", "source": "queue"}
+{"id": "S07_052", "action": "drop", "reason": "baggage fees for fare-timing question: 0 vs 1 borderline", "source": "queue"}
+{"id": "S07_053", "action": "drop", "reason": "winter garden chores for aphid question: 0 vs 1 borderline", "source": "queue"}
+{"id": "S07_055", "action": "drop", "reason": "appliance warranty rant for dishwasher question: 0 vs 1 borderline", "source": "queue"}
+{"id": "S07_057", "action": "drop", "reason": "iPhone vs Android rant for transfer question: 0 vs 1 borderline", "source": "queue"}
+{"id": "H02_079", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (a loaf usually serves 8-10)", "source": "queue"}
+{"id": "H02_070", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (enquiring about the mechanism suggests own use)", "source": "queue"}
+{"id": "H02_077", "action": "drop", "reason": "unknown item with skewed base rate: ideal answer is not 0.5 (recipients usually order their packages)", "source": "queue"}
+{"id": "S03_055", "action": "relabel", "label": 3, "reason": "complete sentences + polite conventions -> formal", "source": "queue"}
+{"id": "S03_056", "action": "drop", "reason": "plain invitation: neutral vs formal borderline", "source": "queue"}
+{"id": "S03_059", "action": "keep", "reason": "brief plain thanks -> neutral (both annotators)", "source": "queue"}
+{"id": "S03_060", "action": "keep", "reason": "brief plain appreciation -> neutral (both annotators)", "source": "queue"}
+{"id": "S05_056", "action": "relabel", "label": 1, "reason": "statement of demand with no courtesy at all -> curt", "source": "queue"}
+{"id": "S05_059", "action": "keep", "reason": "plain request, basic courtesy -> neutral (both annotators)", "source": "queue"}
+{"id": "S05_060", "action": "keep", "reason": "plain request, basic courtesy -> neutral (both annotators)", "source": "queue"}
+{"id": "S05_061", "action": "keep", "reason": "plain request, basic courtesy -> neutral (both annotators)", "source": "queue"}
+{"id": "S05_062", "action": "keep", "reason": "plain request, basic courtesy -> neutral (both annotators)", "source": "queue"}
+{"id": "S05_063", "action": "keep", "reason": "plain request, basic courtesy -> neutral (both annotators)", "source": "queue"}
+{"id": "S07_065", "action": "keep", "reason": "one of two parts answered -> partial (both annotators)", "source": "queue"}
+{"id": "S07_066", "action": "keep", "reason": "one of two parts answered -> partial (both annotators)", "source": "queue"}
+{"id": "S07_067", "action": "keep", "reason": "one of two parts answered -> partial (both annotators)", "source": "queue"}
+{"id": "S07_068", "action": "keep", "reason": "one of two parts answered -> partial (both annotators)", "source": "queue"}
+{"id": "S09_058", "action": "keep", "reason": "minor hazard explicitly managed -> low (both annotators)", "source": "queue"}
+{"id": "S09_059", "action": "keep", "reason": "minor hazard explicitly managed -> low (both annotators)", "source": "queue"}
+{"id": "S09_060", "action": "keep", "reason": "minor hazard explicitly managed -> low (both annotators)", "source": "queue"}
+{"id": "S09_061", "action": "keep", "reason": "unchecked tide + slick rocks -> elevated (both annotators)", "source": "queue"}
+{"id": "C05_007", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C05_032", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "C05_023", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S05_033", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S05_030", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S07_014", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "S07_040", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H01_026", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H01_058", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H01_056", "action": "keep", "reason": "audit: label correct", "source": "audit"}
+{"id": "H02_001", "action": "keep", "reason": "audit: label correct", "source": "audit"}

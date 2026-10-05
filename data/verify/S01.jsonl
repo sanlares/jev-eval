@@ -1,0 +1,58 @@
+{"id": "S01_000", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_001", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_002", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_003", "label": 1, "ambiguous": true, "note": "Silent revert to 'send now' with no warning could be judged more severe despite the easy workaround."}
+{"id": "S01_004", "label": 2, "ambiguous": true, "note": "70% matchmaking failure with no workaround borders on critical for that game mode."}
+{"id": "S01_005", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_006", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_007", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_008", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_009", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_010", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_011", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_012", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_013", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_014", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_015", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_016", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_017", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_018", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_019", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_020", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_021", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_022", "label": 2, "ambiguous": true, "note": "Unclear whether the wrong displayed total also affects the actual charge, which would push this toward critical."}
+{"id": "S01_023", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_024", "label": 2, "ambiguous": true, "note": "Silent overcharging at scale could be judged critical given the billing-integrity impact."}
+{"id": "S01_025", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_026", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_027", "label": 0, "ambiguous": true, "note": "The email-timing change could be read as a functional regression rather than a pure cosmetic note."}
+{"id": "S01_028", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S01_029", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_030", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_031", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_032", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_033", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_034", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_035", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_036", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_037", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_038", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_039", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_040", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_041", "label": 3, "ambiguous": true, "note": "Could be scored major since it is an intermittent save conflict on a subset of workbooks rather than a total feature failure, but the silent, unrecoverable overwrite of unsaved edits argues for critical."}
+{"id": "S01_042", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_043", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_044", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_045", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_046", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_047", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_048", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_049", "label": 3, "ambiguous": true, "note": "Could be scored major since only group messaging is affected rather than the whole product, but permanently lost messages amount to unrecoverable data loss."}
+{"id": "S01_050", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_051", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_052", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_053", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_054", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S01_055", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S01_056", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S01_057", "label": 2, "ambiguous": false, "note": ""}

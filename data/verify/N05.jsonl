@@ -1,0 +1,56 @@
+{"id": "N05_000", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_001", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_002", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_003", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_004", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_005", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_006", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_007", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_008", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_009", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_010", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_011", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_012", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_013", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_014", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_015", "label": false, "ambiguous": true, "note": "Model name and runtime match, but neither the weight (2.3kg should be ~5.1lb, not 6.3lb) nor the length (108cm should be ~42.5in, not 47.5in) conversions reconcile."}
+{"id": "N05_016", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_017", "label": true, "ambiguous": true, "note": "Same tire model/size/load/speed; only the sale quantity (single vs set of four) differs."}
+{"id": "N05_018", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_019", "label": true, "ambiguous": true, "note": "Same tire model/size/rating; quantity (set of four vs individual) and condition (used takeoffs vs new) differ, which the brief does not list as a product-identity criterion."}
+{"id": "N05_020", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_021", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_022", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_023", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_024", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_025", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_026", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_027", "label": true, "ambiguous": true, "note": "Same tire model/size/load/speed; quantity (one vs four) and cosmetic-mark description differ but tread/condition claims are otherwise consistent."}
+{"id": "N05_028", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_029", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_030", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_031", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_032", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_033", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_034", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_035", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_036", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_037", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_038", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_039", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_040", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_041", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_042", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_043", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_044", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_045", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_046", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_047", "label": false, "ambiguous": true, "note": "Cord length converts correctly (6m≈19ft) and accessories match, but the weight does not (3.8kg should be ~8.4lb, not 6.2lb), and record_b's own text flags suspicion about the weight figure."}
+{"id": "N05_048", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_049", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_050", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_051", "label": false, "ambiguous": false, "note": ""}
+{"id": "N05_052", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_053", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_054", "label": true, "ambiguous": false, "note": ""}
+{"id": "N05_055", "label": false, "ambiguous": false, "note": ""}

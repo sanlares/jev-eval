@@ -1,0 +1,65 @@
+{"id": "S02_000", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_001", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_002", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "distractor", "length": "medium", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_003", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a food order", "writer": null}
+{"id": "S02_004", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "distractor", "length": "medium", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_005", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_006", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_007", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_008", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_009", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_010", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_011", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "implicit", "length": "medium", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_012", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "distractor", "length": "short", "subtopic": "a food order", "writer": null}
+{"id": "S02_013", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_014", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "distractor", "length": "medium", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_015", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_016", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a food order", "writer": null}
+{"id": "S02_017", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_018", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_019", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_020", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_021", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_022", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "hard", "hard_type": "distractor", "length": "long", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_023", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_024", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_025", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_026", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "implicit", "length": "long", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_027", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_028", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_029", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_030", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_031", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_032", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_033", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_034", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_035", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_036", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_037", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_038", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_039", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a phone plan", "writer": null}
+{"id": "S02_040", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a food order", "writer": null}
+{"id": "S02_041", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_042", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_043", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_044", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "sarcasm", "length": "long", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_045", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an internet outage", "writer": null}
+{"id": "S02_046", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_047", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_048", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a food order", "writer": null}
+{"id": "S02_049", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "medium", "hard_type": null, "length": "long", "subtopic": "a food order", "writer": null}
+{"id": "S02_050", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a delayed flight", "writer": null}
+{"id": "S02_051", "task_id": "S02", "primitive": "score", "label": 4, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a gym membership", "writer": null}
+{"id": "S02_052", "task_id": "S02", "primitive": "score", "label": 0, "difficulty": "hard", "hard_type": "implicit", "length": "short", "subtopic": "a broken appliance", "writer": null}
+{"id": "S02_053", "task_id": "S02", "primitive": "score", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a late delivery", "writer": null}
+{"id": "S02_054", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "easy", "hard_type": null, "length": "long", "subtopic": "a wrong charge", "writer": null}
+{"id": "S02_055", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a phone plan", "writer": null, "topup": true}
+{"id": "S02_056", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a phone plan", "writer": null, "topup": true}
+{"id": "S02_057", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a late delivery", "writer": null, "topup": true}
+{"id": "S02_058", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a food order", "writer": null, "topup": true}
+{"id": "S02_059", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a phone plan", "writer": null, "topup": true}
+{"id": "S02_060", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a delayed flight", "writer": null, "topup": true}
+{"id": "S02_061", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a delayed flight", "writer": null, "topup": true}
+{"id": "S02_062", "task_id": "S02", "primitive": "score", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a late delivery", "writer": null, "topup": true}
+{"id": "S02_063", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a late delivery", "writer": null, "topup": true}
+{"id": "S02_064", "task_id": "S02", "primitive": "score", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a late delivery", "writer": null, "topup": true}

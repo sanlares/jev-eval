@@ -1,0 +1,62 @@
+{"id": "C05_000", "label": "materials_science", "ambiguous": false, "note": ""}
+{"id": "C05_001", "label": "epidemiology", "ambiguous": false, "note": ""}
+{"id": "C05_002", "label": "organic_chemistry", "ambiguous": false, "note": ""}
+{"id": "C05_003", "label": "climate_science", "ambiguous": false, "note": ""}
+{"id": "C05_004", "label": "particle_physics", "ambiguous": false, "note": ""}
+{"id": "C05_005", "label": "materials_science", "ambiguous": false, "note": ""}
+{"id": "C05_006", "label": "epidemiology", "ambiguous": false, "note": ""}
+{"id": "C05_007", "label": "linguistics", "ambiguous": false, "note": ""}
+{"id": "C05_008", "label": "ecology", "ambiguous": false, "note": ""}
+{"id": "C05_009", "label": "epidemiology", "ambiguous": false, "note": ""}
+{"id": "C05_010", "label": "genetics", "ambiguous": false, "note": ""}
+{"id": "C05_011", "label": "astronomy", "ambiguous": false, "note": ""}
+{"id": "C05_012", "label": "computer_vision", "ambiguous": false, "note": ""}
+{"id": "C05_013", "label": "ecology", "ambiguous": false, "note": ""}
+{"id": "C05_014", "label": "neuroscience", "ambiguous": false, "note": ""}
+{"id": "C05_015", "label": "geology", "ambiguous": false, "note": ""}
+{"id": "C05_016", "label": "neuroscience", "ambiguous": true, "note": "The large-cohort, exposure-controlled design also reads as occupational epidemiology, but the core finding concerns brain white-matter thinning and cognition."}
+{"id": "C05_017", "label": "materials_science", "ambiguous": false, "note": ""}
+{"id": "C05_018", "label": "linguistics", "ambiguous": false, "note": ""}
+{"id": "C05_019", "label": "climate_science", "ambiguous": false, "note": ""}
+{"id": "C05_020", "label": "astronomy", "ambiguous": false, "note": ""}
+{"id": "C05_021", "label": "epidemiology", "ambiguous": false, "note": ""}
+{"id": "C05_022", "label": "ecology", "ambiguous": true, "note": "Could also be read as climate_science, since elevated CO2 and soil carbon flux relate to the carbon cycle."}
+{"id": "C05_023", "label": "materials_science", "ambiguous": false, "note": ""}
+{"id": "C05_024", "label": "organic_chemistry", "ambiguous": false, "note": ""}
+{"id": "C05_025", "label": "computer_vision", "ambiguous": false, "note": ""}
+{"id": "C05_026", "label": "particle_physics", "ambiguous": false, "note": ""}
+{"id": "C05_027", "label": "geology", "ambiguous": false, "note": ""}
+{"id": "C05_028", "label": "organic_chemistry", "ambiguous": false, "note": ""}
+{"id": "C05_029", "label": "epidemiology", "ambiguous": false, "note": ""}
+{"id": "C05_030", "label": "particle_physics", "ambiguous": false, "note": ""}
+{"id": "C05_031", "label": "climate_science", "ambiguous": false, "note": ""}
+{"id": "C05_032", "label": "geology", "ambiguous": false, "note": ""}
+{"id": "C05_033", "label": "astronomy", "ambiguous": false, "note": ""}
+{"id": "C05_034", "label": "ecology", "ambiguous": false, "note": ""}
+{"id": "C05_035", "label": "geology", "ambiguous": false, "note": ""}
+{"id": "C05_036", "label": "linguistics", "ambiguous": false, "note": ""}
+{"id": "C05_037", "label": "astronomy", "ambiguous": false, "note": ""}
+{"id": "C05_038", "label": "neuroscience", "ambiguous": false, "note": ""}
+{"id": "C05_039", "label": "linguistics", "ambiguous": false, "note": ""}
+{"id": "C05_040", "label": "climate_science", "ambiguous": false, "note": ""}
+{"id": "C05_041", "label": "organic_chemistry", "ambiguous": false, "note": ""}
+{"id": "C05_042", "label": "particle_physics", "ambiguous": false, "note": ""}
+{"id": "C05_043", "label": "organic_chemistry", "ambiguous": false, "note": ""}
+{"id": "C05_044", "label": "ecology", "ambiguous": false, "note": ""}
+{"id": "C05_045", "label": "genetics", "ambiguous": false, "note": ""}
+{"id": "C05_046", "label": "geology", "ambiguous": true, "note": "Could also be read as computer_vision given the deep-learning models discussed, but the review's conclusion centers on bedrock structure and pore-water pressure as the controlling geological factors."}
+{"id": "C05_047", "label": "ecology", "ambiguous": false, "note": ""}
+{"id": "C05_048", "label": "genetics", "ambiguous": false, "note": ""}
+{"id": "C05_049", "label": "materials_science", "ambiguous": false, "note": ""}
+{"id": "C05_050", "label": "genetics", "ambiguous": true, "note": "Could also be read as epidemiology, since it's a large-biobank risk study, but the key exposure measured is genetic variant carrier status."}
+{"id": "C05_051", "label": "particle_physics", "ambiguous": false, "note": ""}
+{"id": "C05_052", "label": "computer_vision", "ambiguous": false, "note": ""}
+{"id": "C05_053", "label": "ecology", "ambiguous": false, "note": ""}
+{"id": "C05_054", "label": "astronomy", "ambiguous": false, "note": ""}
+{"id": "C05_055", "label": "neuroscience", "ambiguous": false, "note": ""}
+{"id": "C05_056", "label": "computer_vision", "ambiguous": false, "note": ""}
+{"id": "C05_057", "label": "computer_vision", "ambiguous": false, "note": ""}
+{"id": "C05_058", "label": "linguistics", "ambiguous": false, "note": ""}
+{"id": "C05_059", "label": "neuroscience", "ambiguous": false, "note": ""}
+{"id": "C05_060", "label": "genetics", "ambiguous": true, "note": "Could also be read as ecology, since the field application is species identification, but the core innovation is a portable DNA-sequencing device."}
+{"id": "C05_061", "label": "organic_chemistry", "ambiguous": false, "note": ""}

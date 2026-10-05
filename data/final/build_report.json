@@ -1,0 +1,256 @@
+[
+ {
+  "task": "C01",
+  "generated": 55,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "C02",
+  "generated": 58,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 2
+ },
+ {
+  "task": "C03",
+  "generated": 60,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 3
+ },
+ {
+  "task": "C04",
+  "generated": 58,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "C05",
+  "generated": 62,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "C06",
+  "generated": 70,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "C07",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "C08",
+  "generated": 64,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 2
+ },
+ {
+  "task": "C09",
+  "generated": 55,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "C10",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "S01",
+  "generated": 58,
+  "final": 50,
+  "target": 50,
+  "relabeled": 1,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "S02",
+  "generated": 65,
+  "final": 50,
+  "target": 50,
+  "relabeled": 5,
+  "adjudicated_drop": 3
+ },
+ {
+  "task": "S03",
+  "generated": 63,
+  "final": 50,
+  "target": 50,
+  "relabeled": 4,
+  "adjudicated_drop": 5
+ },
+ {
+  "task": "S04",
+  "generated": 58,
+  "final": 50,
+  "target": 50,
+  "relabeled": 1,
+  "adjudicated_drop": 2
+ },
+ {
+  "task": "S05",
+  "generated": 64,
+  "final": 50,
+  "target": 50,
+  "relabeled": 7,
+  "adjudicated_drop": 5
+ },
+ {
+  "task": "S06",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 1
+ },
+ {
+  "task": "S07",
+  "generated": 69,
+  "final": 50,
+  "target": 50,
+  "relabeled": 3,
+  "adjudicated_drop": 10
+ },
+ {
+  "task": "S08",
+  "generated": 55,
+  "final": 50,
+  "target": 50,
+  "relabeled": 1
+ },
+ {
+  "task": "S09",
+  "generated": 63,
+  "final": 50,
+  "target": 50,
+  "relabeled": 3,
+  "adjudicated_drop": 6
+ },
+ {
+  "task": "S10",
+  "generated": 57,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "N01",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "N02",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "N03",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 3
+ },
+ {
+  "task": "N04",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "N05",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 3
+ },
+ {
+  "task": "N06",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 2
+ },
+ {
+  "task": "N07",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0,
+  "adjudicated_drop": 2
+ },
+ {
+  "task": "N08",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "N09",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "N10",
+  "generated": 56,
+  "final": 50,
+  "target": 50,
+  "relabeled": 0
+ },
+ {
+  "task": "T01",
+  "generated": 165,
+  "final": 150,
+  "target": 150,
+  "relabeled": 0,
+  "adjudicated_drop": 4
+ },
+ {
+  "task": "H01",
+  "generated": 66,
+  "final": 60,
+  "target": 60,
+  "relabeled": 0,
+  "adjudicated_drop": 2
+ },
+ {
+  "task": "H02",
+  "generated": 82,
+  "final": 60,
+  "target": 60,
+  "relabeled": 0,
+  "adjudicated_drop": 16
+ }
+]

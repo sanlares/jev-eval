@@ -1,0 +1,64 @@
+{"id": "S05_000", "label": 2, "ambiguous": true, "note": "Softened conditional phrasing shows courtesy but there is no greeting or explicit thanks, bordering on polite (3)."}
+{"id": "S05_001", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_002", "label": 2, "ambiguous": true, "note": "Sarcastic opener could read as mildly curt despite the courteous closing question."}
+{"id": "S05_003", "label": 3, "ambiguous": true, "note": "Joking tone could undercut sincerity, but the explicit please and thanks support the polite tier."}
+{"id": "S05_004", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_005", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S05_006", "label": 3, "ambiguous": true, "note": "Greeting and softened phrasing are present but there is no explicit thank you."}
+{"id": "S05_007", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_008", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_009", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_010", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_011", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_012", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_013", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_014", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_015", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_016", "label": 4, "ambiguous": true, "note": "No explicit apology or greeting, but the deferential, self-effacing tone leans very polite rather than plain polite."}
+{"id": "S05_017", "label": 1, "ambiguous": true, "note": "Curtly delegating the forwarding task could be read as dismissive (0) rather than merely curt."}
+{"id": "S05_018", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_019", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_020", "label": 1, "ambiguous": true, "note": "Firm, repeated demands with blame-shifting language could be read as demanding (0) rather than merely curt."}
+{"id": "S05_021", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_022", "label": 1, "ambiguous": true, "note": "Pointing out a repeated mistake adds a critical edge that could tip this toward demanding (0)."}
+{"id": "S05_023", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S05_024", "label": 1, "ambiguous": true, "note": "The accusatory 'I shouldn't have to follow up on this a second time' could be read as demanding (0) rather than merely curt."}
+{"id": "S05_025", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_026", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_027", "label": 3, "ambiguous": true, "note": "Very brief with only a one-word thanks; could be judged plain/neutral (2) instead of polite."}
+{"id": "S05_028", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S05_029", "label": 3, "ambiguous": true, "note": "Self-deprecating sarcasm could read as less than fully sincere, though thanks is present."}
+{"id": "S05_030", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_031", "label": 3, "ambiguous": true, "note": "Strong deference and gratitude approach very polite (4), though no explicit apology for imposing is made."}
+{"id": "S05_032", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_033", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_034", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_035", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_036", "label": 3, "ambiguous": true, "note": "Greeting and softened phrasing are present but there is no explicit thank you."}
+{"id": "S05_037", "label": 1, "ambiguous": true, "note": "Scolding reference to prior poor work could push this toward demanding (0)."}
+{"id": "S05_038", "label": 0, "ambiguous": true, "note": "The blame-shifting explanation is defensive rather than a direct insult, so some would call this merely curt (1)."}
+{"id": "S05_039", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S05_040", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_041", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S05_042", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_043", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_044", "label": 3, "ambiguous": true, "note": "Extensive courteous detail could be judged very polite (4) rather than polite."}
+{"id": "S05_045", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_046", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_047", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S05_048", "label": 2, "ambiguous": true, "note": "Greeting and an offer to help show some consideration, which could be judged polite (3) instead of neutral."}
+{"id": "S05_049", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S05_050", "label": 4, "ambiguous": true, "note": "Brief relative to typical very-polite examples; could be judged merely polite (3)."}
+{"id": "S05_051", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_052", "label": 1, "ambiguous": true, "note": "Curt callback to prior incomplete work could push this toward demanding (0) rather than merely curt."}
+{"id": "S05_053", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S05_054", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S05_055", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S05_056", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S05_057", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S05_058", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S05_059", "label": 2, "ambiguous": true, "note": "Detailed, considerate explanation of the problem and deadline, but no greeting or thanks; borders on polite (3)."}
+{"id": "S05_060", "label": 2, "ambiguous": true, "note": "'Please' plus a direct imperative with no greeting or thanks; borders on curt (1)."}
+{"id": "S05_061", "label": 2, "ambiguous": true, "note": "No greeting, but the deferential 'would you be able to' phrasing and surrounding context add courtesy; borders on polite (3)."}
+{"id": "S05_062", "label": 2, "ambiguous": true, "note": "Considerate factual context and a polite modal question, but no greeting or thanks; borders on polite (3)."}
+{"id": "S05_063", "label": 2, "ambiguous": true, "note": "'Please' plus a direct imperative with no greeting or thanks; borders on curt (1)."}

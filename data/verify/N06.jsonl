@@ -1,0 +1,56 @@
+{"id": "N06_000", "label": true, "ambiguous": true, "note": "No explicit link or credential request in the text, but a suspicious mailer domain plus manufactured urgency to sign in immediately are classic phishing pressure tactics."}
+{"id": "N06_001", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_002", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_003", "label": true, "ambiguous": true, "note": "No payment link included yet, but this is a classic BEC setup: secrecy, urgency, bypassing normal process, sent from an oddly named '-exec' domain."}
+{"id": "N06_004", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_005", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_006", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_007", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_008", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_009", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_010", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_011", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_012", "label": true, "ambiguous": true, "note": "Forwarded by a colleague and framed as a routine portal migration, but the portal domain doesn't match the real company domain and re-entering a password twice is dismissed as normal, both credential-phishing tells."}
+{"id": "N06_013", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_014", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_015", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_016", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_017", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_018", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_019", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_020", "label": true, "ambiguous": true, "note": "Reads like a normal HR open-enrollment email, but asks the employee to reply with full SSN and date of birth, which a legitimate process would never do."}
+{"id": "N06_021", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_022", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_023", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_024", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_025", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_026", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_027", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_028", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_029", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_030", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_031", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_032", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_033", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_034", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_035", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_036", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_037", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_038", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_039", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_040", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_041", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_042", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_043", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_044", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_045", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_046", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_047", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_048", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_049", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_050", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_051", "label": false, "ambiguous": false, "note": ""}
+{"id": "N06_052", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_053", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_054", "label": true, "ambiguous": false, "note": ""}
+{"id": "N06_055", "label": true, "ambiguous": true, "note": "The domain reads more plausible than the other scam examples here, but demanding a fee via a link before redelivery matches a well-known parcel-scam pattern."}

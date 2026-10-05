@@ -1,0 +1,632 @@
+"""Frozen task specifications for the Jev benchmark.
+
+Each task holds:
+  - the exact Jev question(s) (instructions + criteria) sent to the API, unchanged, and
+  - generation guidance used only to write synthetic items (never sent to Jev).
+
+Labels: choice -> criteria keys; score -> level index 0..L-1; noul -> True/False.
+T01 (tweets) is special: one 5-level ground truth asked in three formats.
+"""
+
+# ---------------------------------------------------------------- generic guidance
+
+DIFFICULTY_GUIDE = {
+    "easy": "The label is obvious: explicit, typical cues that any reader would recognise.",
+    "medium": "The label must be inferred from context. Avoid the most obvious keywords and never use the label name itself.",
+    "hard": "Hard case of the row's hard_type (see 'Hard types' below). The label must STILL be unambiguous to a careful expert reader.",
+}
+
+HARD_TYPE_GUIDE = {
+    "distractor": "Prominently mention a cue that belongs to a different label, but make the correct label clearly the main point.",
+    "implicit": "No explicit keywords at all; the label is only inferable from indirect, concrete details.",
+    "negation": "Use negation or an explicit denial to flip a surface cue (the text mentions X, but says it is not the case / not wanted).",
+    "hypothetical": "The key content is conditional, planned, imagined or feared rather than actual; this matters for the label.",
+    "quoted": "The surface cue appears in someone else's reported or quoted words, not as the writer's own request/claim.",
+    "sarcasm": "The literal words say one thing but the intended meaning (which determines the label) is the opposite; a human gets it immediately.",
+    "long_irrelevant": "Long text where most content is irrelevant chatter; the signal that determines the label is only one or two sentences somewhere in the middle.",
+    "near_miss": "Almost qualifies for the opposite label but differs in one crucial detail.",
+    "numbers": "The correct label depends on reading a number, quantity or measurement correctly.",
+    "mixed_signals": "Contains both positive and negative elements, but the overall stance is still clearly the labeled one.",
+    "jargon_only": "The stance is conveyed only through domain slang, jargon or emojis, with no plain-English sentiment words.",
+    "tempting_guess": "The text invites a plausible assumption about the answer (a stereotype or typical pattern) but never states or implies it.",
+    "related_but_missing": "The text contains closely related information, but not the specific fact asked (e.g. yesterday's weather when asked about today).",
+}
+
+LENGTH_GUIDE = {
+    "short": "1-2 sentences (at most ~40 words).",
+    "medium": "3-6 sentences (~50-120 words).",
+    "long": "~180-350 words.",
+}
+
+DEFAULT_LENGTH_WEIGHTS = {"short": 0.4, "medium": 0.4, "long": 0.2}
+
+WRITERS = [
+    "non-native English speaker who writes in simple, slightly awkward sentences",
+    "terse person who writes in lowercase with a couple of typos",
+    "verbose and very detailed writer",
+    "busy parent writing quickly with run-on sentences",
+    "precise technical professional",
+    "retired person with a formal, old-fashioned style",
+    "young adult using casual internet language",
+    "structured writer who uses short bullet points",
+    "rambling storyteller who adds personal context",
+    "matter-of-fact writer with no small talk",
+    "friendly, chatty writer",
+    "skeptical, dry-humored writer",
+]
+
+# ---------------------------------------------------------------- tasks
+
+TASKS = {
+    # ============================== CHOICE ==============================
+    "C01": dict(
+        primitive="choice",
+        domain="customer support tickets sent to a SaaS company",
+        instructions="Which team should handle this customer support ticket?",
+        criteria={
+            "account_access": "Login problems, password resets, two-factor authentication, locked or suspended accounts, single sign-on issues",
+            "billing": "Charges, invoices, refunds, payment methods, receipts, plan prices",
+            "bug_report": "Something in the product is broken, throws errors, or behaves incorrectly",
+            "feature_request": "Asks for new functionality or an improvement to how the product works",
+            "cancellation": "Wants to cancel, close the account, stop auto-renewal, or leave the service",
+        },
+        subtopics=["project-management app", "email-marketing platform", "CRM", "video-conferencing tool",
+                   "cloud file storage", "note-taking app", "password manager", "website builder",
+                   "analytics dashboard", "design collaboration tool", "help-desk software", "team chat app"],
+        hard_types=["distractor", "implicit", "long_irrelevant"],
+        gen_notes="Each ticket has ONE primary need. For distractors, e.g. a cancellation ticket that also grumbles about a price, the primary request must stay clear.",
+    ),
+    "C02": dict(
+        primitive="choice",
+        domain="short personal messages and social-media posts",
+        instructions="Which emotion does the writer primarily express?",
+        criteria={
+            "joy": "Happiness, delight, excitement, gratitude, pride",
+            "sadness": "Sorrow, grief, disappointment, loneliness",
+            "anger": "Irritation, rage, resentment, feeling wronged",
+            "fear": "Worry, anxiety, dread, feeling threatened",
+            "surprise": "Astonishment or shock at something unexpected, without a dominant positive or negative feeling",
+            "disgust": "Revulsion or strong distaste toward something gross or morally repugnant",
+        },
+        subtopics=["work", "family", "travel", "health", "school", "pets", "neighbors", "food",
+                   "a sports match", "a storm", "technology", "friendship", "moving house", "a concert"],
+        hard_types=["implicit", "distractor", "sarcasm"],
+        gen_notes="One dominant emotion. Surprise items must not be dominated by joy or fear. Implicit items describe the situation/behaviour without emotion words.",
+    ),
+    "C03": dict(
+        primitive="choice",
+        domain="fictional news articles (headline plus first paragraph); no business, markets or economy stories",
+        instructions="What is the main topic of this news article?",
+        criteria={
+            "politics": "Government, elections, legislation, diplomacy, political parties",
+            "sports": "Athletes, teams, matches, tournaments, transfers",
+            "science": "Research discoveries, space, physics, biology, archaeology",
+            "health": "Medicine, diseases, public health, hospitals, nutrition",
+            "technology": "Gadgets, software, the internet, AI, cybersecurity, tech products",
+            "entertainment": "Movies, music, TV, celebrities, games, books, arts",
+            "crime_justice": "Crimes, police investigations, trials, court rulings",
+            "weather_environment": "Weather events, natural disasters, climate, pollution, wildlife conservation",
+        },
+        subtopics=["a small town", "a national capital", "a university", "an international event",
+                   "a coastal region", "a mountain area", "a big city", "online communities"],
+        hard_types=["distractor", "implicit", "long_irrelevant"],
+        gen_notes="Use fictional names and places. The main topic must be unambiguous; e.g. a footballer's court trial is crime_justice only if the article is about the trial.",
+    ),
+    "C04": dict(
+        primitive="choice",
+        domain="recipe descriptions from a cooking blog or recipe card",
+        instructions="Which cuisine does this recipe belong to?",
+        criteria={
+            "italian": None, "mexican": None, "japanese": None, "indian": None,
+            "french": None, "thai": None, "korean": None, "moroccan": None,
+        },
+        subtopics=["a main course", "a soup or stew", "a snack or street food", "a dessert",
+                   "a breakfast dish", "a side dish", "a sauce or condiment", "a festive dish"],
+        hard_types=["implicit", "near_miss", "long_irrelevant"],
+        gen_notes="Never name the cuisine or country in medium/hard items. Implicit: only ingredients and techniques. near_miss: a lesser-known authentic dish whose ingredients overlap with a neighbouring cuisine, but with decisive signature ingredients/techniques.",
+    ),
+    "C05": dict(
+        primitive="choice",
+        domain="abstracts of fictional scientific papers",
+        instructions="Which scientific field does this paper primarily belong to?",
+        criteria={
+            "astronomy": None, "ecology": None, "genetics": None, "neuroscience": None,
+            "materials_science": None, "organic_chemistry": None, "climate_science": None,
+            "particle_physics": None, "epidemiology": None, "computer_vision": None,
+            "linguistics": None, "geology": None,
+        },
+        subtopics=["an experimental study", "a theoretical/modelling study", "a field survey",
+                   "a new method or instrument", "a review-style synthesis", "a large dataset analysis"],
+        hard_types=["distractor", "implicit", "long_irrelevant"],
+        gen_notes="Distractor: borrows a method or term from another field (e.g. deep learning used in ecology) while the research question clearly belongs to the labeled field. Avoid genuinely interdisciplinary items where two fields fit equally.",
+    ),
+    "C06": dict(
+        primitive="choice",
+        domain="spoken commands to a smart-home voice assistant (transcribed)",
+        instructions="What does the user want the assistant to do?",
+        criteria={
+            "lights_on": "Turn lights on", "lights_off": "Turn lights off",
+            "dim_lights": "Change light brightness", "set_thermostat": "Change or set the temperature",
+            "play_music": "Start playing music, a song, artist or playlist", "pause_music": "Pause or stop music that is playing",
+            "volume_up": "Make it louder", "volume_down": "Make it quieter",
+            "set_timer": "Start a countdown timer", "set_alarm": "Set a wake-up or clock alarm",
+            "weather_query": "Ask about the weather or forecast", "add_to_shopping_list": "Add an item to the shopping list",
+            "lock_door": "Lock a door", "unlock_door": "Unlock a door",
+            "start_vacuum": "Start the robot vacuum", "check_camera": "Show or check a security camera feed",
+            "call_contact": "Phone or video-call someone", "read_calendar": "Ask about scheduled events or appointments",
+            "turn_on_tv": "Turn on the TV", "other": "Anything not covered by the options above",
+        },
+        other_label="other",
+        other_share=0.1,
+        subtopics=["morning routine", "cooking in the kitchen", "going to bed", "leaving the house",
+                   "hosting guests", "working from home", "kids in the house", "arriving home"],
+        length_weights={"short": 0.75, "medium": 0.25},
+        hard_types=["implicit", "distractor", "negation"],
+        gen_notes="Commands sound like natural speech. Implicit: 'it's pitch black in here' -> lights_on. Distractor: 'once this song ends, wake me at 7' -> set_alarm. Negation: 'don't turn them off, just lower them' -> dim_lights. 'other' items are requests outside the list (order food, trivia, jokes, reminders to email someone...).",
+    ),
+    "C07": dict(
+        primitive="choice",
+        domain="patient-portal messages describing symptoms",
+        instructions="Which specialty department should this patient message be routed to?",
+        criteria={
+            "cardiology": "Heart and blood vessels: chest pressure, palpitations, blood pressure",
+            "dermatology": "Skin, hair and nails: rashes, moles, itching, acne",
+            "gastroenterology": "Digestive system: stomach pain, reflux, bowel problems, liver",
+            "neurology": "Brain and nerves: headaches, numbness, seizures, memory, dizziness",
+            "orthopedics": "Bones, joints and muscles: fractures, sprains, back or knee pain",
+            "ophthalmology": "Eyes and vision: blurred vision, eye pain, floaters, red eye",
+        },
+        subtopics=["an adult patient", "a parent writing about a child", "an older patient",
+                   "an athlete", "an office worker", "a caregiver writing for a relative"],
+        hard_types=["implicit", "distractor", "long_irrelevant"],
+        gen_notes="Use lay language. One clear primary organ system. Distractor: a secondary symptom from another system is mentioned but clearly not the reason for writing.",
+    ),
+    "C08": dict(
+        primitive="choice",
+        domain="programming questions posted on a Q&A site (may include code snippets)",
+        instructions="Which language or technology is this question primarily about?",
+        criteria={
+            "python": None, "javascript": None, "sql": None, "rust": None, "java": None,
+            "css": None, "bash": None, "git": None, "docker": None, "r": "The R language",
+            "go": "The Go language", "cpp": "C++",
+        },
+        subtopics=["an error message", "performance", "how to do X idiomatically", "a confusing behaviour",
+                   "setup/configuration", "data processing"],
+        hard_types=["implicit", "distractor", "long_irrelevant"],
+        gen_notes="Implicit: the technology is never named; only code/syntax/error output reveals it. Distractor: another technology is named (e.g. a Python script that runs git) but the actual problem is in the labeled one.",
+    ),
+    "C09": dict(
+        primitive="choice",
+        domain="comments posted in online hobby forums",
+        instructions="How should this forum comment be moderated?",
+        criteria={
+            "acceptable": "Normal on-topic contribution, including strong but civil disagreement",
+            "harassment": "Insults, demeans or personally attacks another user",
+            "spam": "Advertising, affiliate links, or unsolicited promotion",
+            "misinformation": "States clearly false factual claims, e.g. health or science myths, as true",
+            "off_topic": "Civil but unrelated to the thread's subject",
+        },
+        state_format={"forum": "forum name/topic", "thread_title": "title of the thread", "comment": "the comment to moderate"},
+        subtopics=["gardening", "home cooking", "cycling", "board games", "aquariums", "photography",
+                   "parenting", "woodworking", "hiking", "retro video games"],
+        hard_types=["distractor", "sarcasm", "implicit"],
+        gen_notes="Keep harassment mild (mocking, belittling; no slurs, no threats). Distractor: heated but civil disagreement -> acceptable, or genuinely helpful-sounding advice that is actually a disguised product plug -> spam. Sarcasm: passive-aggressive personal attack -> harassment.",
+    ),
+    "C10": dict(
+        primitive="choice",
+        domain="hotel reviews from a travel site",
+        instructions="Which aspect of the hotel is this review mainly about?",
+        criteria={
+            "cleanliness": "Dirt, hygiene, housekeeping, smells",
+            "staff_service": "Reception, staff attitude, helpfulness, check-in experience",
+            "location": "Neighborhood, distance to attractions, transport, surroundings",
+            "room_comfort": "Bed, room size, furniture, temperature, view",
+            "food": "Breakfast, restaurant, bar, room service",
+            "other": "Anything else (e.g. pool, parking, wifi, gym)",
+        },
+        other_label="other",
+        other_share=0.1,
+        subtopics=["a beach resort", "a city business hotel", "a budget hostel", "a countryside inn",
+                   "an airport hotel", "a ski lodge", "a boutique hotel", "a family resort"],
+        hard_types=["distractor", "implicit", "sarcasm"],
+        gen_notes="The review can mention several aspects, but one must clearly dominate.",
+    ),
+
+    # ============================== SCORE ==============================
+    "S01": dict(
+        primitive="score",
+        domain="bug reports filed for a software product",
+        instructions="How severe is the reported bug?",
+        criteria=[
+            "Cosmetic: a visual or wording problem; functionality is unaffected",
+            "Minor: a feature misbehaves in an edge case or is inconvenient, and an easy workaround exists",
+            "Major: a core feature is broken or gives wrong results for many users; workarounds are painful or partial",
+            "Critical: crash, data loss, security hole, or the whole product is unusable, with no workaround",
+        ],
+        subtopics=["fitness-tracking app", "photo editor", "online game", "spreadsheet tool",
+                   "e-commerce checkout", "messaging app", "smart-watch firmware", "school learning platform"],
+        hard_types=["distractor", "implicit", "long_irrelevant"],
+        gen_notes="Distractor: the reporter's tone contradicts severity (furious about a typo, or calmly reporting data loss).",
+    ),
+    "S02": dict(
+        primitive="score",
+        domain="messages from customers to a company's support chat",
+        instructions="How frustrated is the customer?",
+        criteria=[
+            "Calm and neutral: no sign of annoyance",
+            "Mildly inconvenienced: slight annoyance but patient and friendly",
+            "Clearly frustrated: complains about the problem and expresses dissatisfaction",
+            "Very frustrated: mentions repeated failures, strong complaints, patience running out",
+            "Furious: hostile, threatens to leave or escalate, may use all caps or insults",
+        ],
+        subtopics=["a late delivery", "an internet outage", "a broken appliance", "a wrong charge",
+                   "a delayed flight", "a gym membership", "a phone plan", "a food order"],
+        writers=False,
+        hard_types=["sarcasm", "distractor", "implicit"],
+        gen_notes="Distractor: a serious problem described calmly (low frustration) or a trivial problem with high frustration. Sarcasm: polite words, clearly very frustrated.",
+    ),
+    "S03": dict(
+        primitive="score",
+        domain="messages and short texts from many settings (emails, notes, chats, letters)",
+        instructions="How formal is the language of this text?",
+        criteria=[
+            "Very informal: slang, abbreviations, emojis, no capitalization, chat-style",
+            "Casual: relaxed everyday language with contractions and a friendly tone",
+            "Neutral: standard, clear language suitable for most contexts",
+            "Formal: professional register, complete sentences, polite conventions, few contractions",
+            "Very formal: ceremonial or legalistic language, elaborate courtesy, rigid structure",
+        ],
+        subtopics=["a party invitation", "a request to a landlord", "a note to a colleague",
+                   "a complaint", "a thank-you message", "a meeting reschedule", "an apology", "an announcement"],
+        writers=False,
+        hard_types=["distractor", "mixed_signals", "long_irrelevant"],
+        gen_notes="Distractor: topic suggests a register (e.g. a legal matter) but the language is the opposite. mixed_signals: mostly one register with a single phrase from another.",
+    ),
+    "S04": dict(
+        primitive="score",
+        domain="explanations of how something works",
+        instructions="What audience is this explanation written for, based on its technical complexity?",
+        criteria=[
+            "For a young child: everyday words and analogies, no technical terms",
+            "For a general adult audience: a few technical terms, each explained",
+            "For a knowledgeable hobbyist or student: uses field terminology without explaining the basics",
+            "For experts: dense jargon, formulas or specialized notation, assumes deep background",
+        ],
+        subtopics=["how vaccines work", "how GPS works", "photosynthesis", "black holes", "how compilers work",
+                   "earthquakes", "how the internet routes data", "rechargeable batteries", "rainbows", "how planes fly"],
+        hard_types=["distractor", "long_irrelevant", "implicit"],
+        gen_notes="Distractor: an intimidating topic explained simply, or a simple topic explained with expert density.",
+    ),
+    "S05": dict(
+        primitive="score",
+        domain="emails asking a colleague, vendor or stranger for something",
+        instructions="How polite is this email request?",
+        criteria=[
+            "Rude: demanding, insulting, or dismissive",
+            "Curt: blunt demand with no greeting or thanks",
+            "Neutral: plain request with basic courtesy",
+            "Polite: greeting, please/thank you, considerate tone",
+            "Very polite: highly deferential, apologizes for imposing, elaborate gratitude",
+        ],
+        subtopics=["a document", "a meeting", "a deadline extension", "a refund of a deposit", "feedback on work",
+                   "a recommendation letter", "access to a system", "fixing a mistake"],
+        writers=False,
+        hard_types=["sarcasm", "mixed_signals", "implicit"],
+        gen_notes="Sarcasm: superficially polite wording that is actually rude/passive-aggressive (label reflects the real tone).",
+    ),
+    "S06": dict(
+        primitive="score",
+        domain="messages sent to a company's internal IT helpdesk",
+        instructions="How urgent is this helpdesk request?",
+        criteria=[
+            "Can wait: a question or minor request with no deadline and little impact",
+            "Soon: affects someone's work or has a deadline within days",
+            "Immediate: work is stopped for many people, a security incident, or a deadline within hours",
+        ],
+        subtopics=["email", "VPN", "printer", "laptop", "shared drive", "phishing", "new software", "Wi-Fi",
+                   "conference room screen", "HR portal access"],
+        hard_types=["distractor", "long_irrelevant", "numbers"],
+        gen_notes="Distractor: writer says 'URGENT' for something trivial, or calmly reports an outage affecting everyone. numbers: urgency depends on a time/quantity (e.g. '200 people can't log in', 'the deadline is in 45 minutes').",
+    ),
+    "S07": dict(
+        primitive="score",
+        domain="question-answer pairs from a help forum or chatbot log",
+        instructions="How well does the answer address the question that was asked? (Judge relevance and completeness, not factual accuracy.)",
+        criteria=[
+            "Does not address the question at all: off-topic or a refusal",
+            "Touches the topic but does not answer what was asked",
+            "Partially answers: addresses the question but misses an important part",
+            "Fully answers the question directly and completely",
+        ],
+        state_format={"question": "the user's question", "answer": "the response to evaluate"},
+        subtopics=["cooking", "travel", "home repair", "software", "gardening", "fitness", "pets", "language learning"],
+        hard_types=["distractor", "long_irrelevant", "near_miss"],
+        gen_notes="Distractor: a long, fluent answer about a closely related topic that never answers the actual question (level 1). near_miss: a multi-part question with one part left unanswered (level 2).",
+    ),
+    "S08": dict(
+        primitive="score",
+        domain="customer product reviews on an online store",
+        instructions="What star rating does this review most likely correspond to?",
+        criteria=[
+            "1 star: very negative; the product failed or is terrible; would not recommend",
+            "2 stars: mostly negative with a minor positive",
+            "3 stars: mixed or mediocre; pros and cons balance out",
+            "4 stars: mostly positive with minor complaints",
+            "5 stars: enthusiastic, no real complaints",
+        ],
+        subtopics=["headphones", "a blender", "running shoes", "a board game", "a desk lamp", "a backpack",
+                   "a coffee maker", "a phone case", "a tent", "a skincare product"],
+        hard_types=["sarcasm", "mixed_signals", "long_irrelevant"],
+        gen_notes="mixed_signals: e.g. lists several small gripes but clearly loves it (4-5), or praises packaging but product broke (1-2).",
+    ),
+    "S09": dict(
+        primitive="score",
+        domain="descriptions of planned or ongoing outdoor activities",
+        instructions="How risky is the described outdoor activity for the people involved?",
+        criteria=[
+            "Negligible risk: routine activity in safe conditions",
+            "Low risk: minor hazards that are well managed",
+            "Elevated risk: notable hazards or missing precautions that could cause injury",
+            "Severe risk: conditions or behavior likely to cause serious injury or death",
+        ],
+        subtopics=["hiking", "kayaking", "rock climbing", "cycling", "open-water swimming", "skiing", "camping",
+                   "fishing", "trail running", "snowshoeing"],
+        hard_types=["implicit", "distractor", "numbers"],
+        gen_notes="Implicit: hazard is only implied by details (thunderstorms forecast at 2pm, summit planned at 3pm). Distractor: dangerous-sounding activity done with full safety (low), or a gentle activity under dangerous conditions. numbers: risk depends on a temperature, wind speed, distance or time.",
+    ),
+    "S10": dict(
+        primitive="score",
+        domain="posts written in hobby forums",
+        instructions="How experienced in the hobby is the person who wrote this post?",
+        criteria=[
+            "Complete beginner: brand new, does not know basic terminology",
+            "Novice: knows a few basic terms but struggles with fundamentals",
+            "Advanced beginner: understands the basics and is learning to apply them",
+            "Intermediate: comfortable with core techniques, working on refinement",
+            "Advanced amateur: deep technical knowledge, specialized equipment, consistent results",
+            "Semi-professional: occasionally paid for the work, discusses workflow and clients",
+            "Seasoned expert: many years of experience, teaches others, industry-level nuance",
+        ],
+        subtopics=["photography", "woodworking", "home brewing", "gardening", "chess", "guitar", "baking bread",
+                   "knitting", "astronomy with a telescope", "aquarium keeping"],
+        hard_types=["distractor", "implicit", "long_irrelevant"],
+        gen_notes="Distractor: a beginner who name-drops fancy gear, or an expert who asks a basic-sounding question in a way that reveals deep knowledge. Adjacent levels must still be distinguishable from concrete cues.",
+    ),
+
+    # ============================== NOUL ==============================
+    "N01": dict(
+        primitive="noul",
+        domain="messages from customers to an online store",
+        instructions="Is the customer asking for a refund (their money back)?",
+        criteria={"true": "Explicitly or implicitly asks to get their money returned",
+                  "false": "Asks for something else (replacement, repair, exchange, store credit, information), or mentions refunds without requesting one"},
+        subtopics=["clothing", "electronics", "furniture", "a subscription box", "concert tickets", "a course",
+                   "kitchenware", "toys"],
+        hard_types=["negation", "quoted", "implicit"],
+        gen_notes="negation: 'I don't want a refund, just send the right size' (false). quoted: 'my friend said you'd refund me but I just want it fixed' (false). implicit: 'please return the $49 to my card' (true). Conditional threats ('if not fixed I'll want a refund') are false.",
+    ),
+    "N02": dict(
+        primitive="noul",
+        domain="free-text fields from forms, emails and support tickets",
+        instructions="Does the text contain personal data that identifies or contacts a specific private individual?",
+        criteria={"true": "Contains at least one of: a personal phone number, personal email address, home street address, government ID number, bank or card number, or a full name together with a date of birth",
+                  "false": "No such data; first names alone, public figures, company phone numbers, or generic addresses like support@company.com do not count"},
+        subtopics=["a delivery issue", "a job application", "a school form", "a rental inquiry", "a medical appointment",
+                   "a club membership", "a lost-and-found report", "an event registration"],
+        hard_types=["near_miss", "implicit", "long_irrelevant"],
+        gen_notes="All data is fictional. near_miss: company hotline, generic role email, first name only, order number (false). implicit: a home address written informally inside a sentence (true).",
+    ),
+    "N03": dict(
+        primitive="noul",
+        domain="retrieved passages in a question-answering system",
+        instructions="Does the passage contain the information needed to answer the question?",
+        criteria={"true": "The answer can be found in or directly inferred from the passage",
+                  "false": "The passage does not provide the answer, even if it is on a related topic"},
+        state_format={"question": "a specific factual question", "passage": "a retrieved passage (fictional encyclopedia/manual/FAQ text)"},
+        subtopics=["a fictional town's history", "a product manual", "an animal species", "a sports club", "a museum",
+                   "a university policy", "a hiking trail", "a software library"],
+        hard_types=["near_miss", "numbers", "implicit"],
+        gen_notes="near_miss: same topic, but the specific asked fact is absent (false). numbers: passage contains a similar number for a different entity/year (false) or the exact one (true). implicit: answer requires one simple inference step (true).",
+    ),
+    "N04": dict(
+        primitive="noul",
+        domain="claims written by an assistant, checked against a source document",
+        instructions="Is the claim fully supported by the source?",
+        criteria={"true": "Everything in the claim is stated in or directly entailed by the source",
+                  "false": "The claim contradicts the source, adds details not in it, or overgeneralizes"},
+        state_format={"source": "a short fictional source document", "claim": "one sentence claim about it"},
+        subtopics=["a clinical study summary", "a city council decision", "a product launch", "a school report",
+                   "a scientific finding", "a sports result", "a museum exhibition", "a weather report"],
+        hard_types=["numbers", "near_miss", "negation"],
+        gen_notes="numbers: claim changes a figure (40% vs 14%) (false) or restates it in a different form (true). near_miss: 'some' vs 'all', 'may' vs 'will' (false). negation: claim negates something the source says did not happen (true) or flips a negation (false).",
+    ),
+    "N05": dict(
+        primitive="noul",
+        domain="product listings from two different online stores",
+        instructions="Do the two records describe the same product (same model and same variant)?",
+        criteria={"true": "Same product, model and variant, even if written differently",
+                  "false": "Different product, model, size, capacity, color or version"},
+        state_format={"record_a": "listing from store A (title and a few attributes)", "record_b": "listing from store B"},
+        subtopics=["laptops", "sneakers", "phones", "vacuum cleaners", "headphones", "coffee machines",
+                   "bicycles", "monitors", "tires", "printer ink"],
+        length_weights={"short": 0.5, "medium": 0.5},
+        hard_types=["near_miss", "numbers", "implicit"],
+        gen_notes="Use fictional brands/models. near_miss: identical except one variant attribute (false). implicit: same product with abbreviations, reordered words, different units (true). numbers: capacity 256GB vs 512GB, size 42 vs 42.5 (false).",
+    ),
+    "N06": dict(
+        primitive="noul",
+        domain="emails received by an employee (sender, subject, body)",
+        instructions="Is this email a phishing attempt?",
+        criteria={"true": "Tries to trick the recipient into revealing credentials, paying, opening a malicious link/attachment, or impersonates someone",
+                  "false": "Legitimate email, even if urgent or promotional"},
+        subtopics=["IT notifications", "package delivery", "HR announcements", "shared documents", "account security",
+                   "invoices from a supplier", "a CEO request", "newsletters"],
+        hard_types=["near_miss", "implicit", "distractor"],
+        gen_notes="Use fictional companies and domains. near_miss: legitimate urgent security notice that asks nothing sensitive (false) vs lookalike sender domain (true). distractor: phishing email with a calm professional tone, or a legit email using words like 'verify'.",
+    ),
+    "N07": dict(
+        primitive="noul",
+        domain="customer product reviews",
+        instructions="Does the review mention a problem with shipping or delivery?",
+        criteria={"true": "Late, lost, damaged in transit, delivered to the wrong place, or other delivery issues",
+                  "false": "No delivery problem (product defects, quality or fit issues do not count)"},
+        subtopics=["furniture", "books", "electronics", "groceries", "plants", "clothing", "toys", "sports gear"],
+        hard_types=["negation", "hypothetical", "distractor"],
+        gen_notes="negation: 'arrived early, but it stopped working' (false). hypothetical: 'I was worried it would arrive late, but...' (false). distractor: product broken but box was fine (false), or glowing product review with a brief note that the box arrived crushed (true).",
+    ),
+    "N08": dict(
+        primitive="noul",
+        domain="messages users type into a customer-service chatbot",
+        instructions="Is the user asking to talk to a human agent?",
+        criteria={"true": "Requests a person, live agent, representative or phone call with staff",
+                  "false": "Anything else, including complaints about the bot without asking for a person"},
+        subtopics=["a bank card", "an airline booking", "an internet provider", "a food delivery", "a phone plan",
+                   "a streaming service", "an insurance claim", "a car rental"],
+        length_weights={"short": 0.6, "medium": 0.4},
+        hard_types=["negation", "implicit", "quoted"],
+        gen_notes="negation: 'no need for a human, just tell me my balance' (false). implicit: 'is there someone real I can explain this to?' (true). quoted: 'the last agent told me to call back' without asking for one now (false).",
+    ),
+    "N09": dict(
+        primitive="noul",
+        domain="notes taken during team meetings",
+        instructions="Do these meeting notes assign a specific task to a specific person?",
+        criteria={"true": "A named person (or clearly identified individual) is responsible for a concrete action",
+                  "false": "No owner for any action (only discussion, decisions, or 'someone should...')"},
+        subtopics=["a product launch", "a school event", "a research project", "a sports club", "an office move",
+                   "a charity fundraiser", "a website redesign", "a hospital ward"],
+        hard_types=["near_miss", "implicit", "long_irrelevant"],
+        gen_notes="near_miss: 'we need to update the deck' / 'someone should follow up' (false). implicit: 'Priya will send the draft by Friday' with no 'action item' label (true).",
+    ),
+    "N10": dict(
+        primitive="noul",
+        domain="short texts about events (news snippets, posts, messages)",
+        instructions="Has the main event described in the text already taken place?",
+        criteria={"true": "The event actually happened in the past",
+                  "false": "The event is planned, expected, hypothetical, cancelled, postponed, or did not happen"},
+        subtopics=["a concert", "a product launch", "a wedding", "a marathon", "a bridge opening",
+                   "a school graduation", "a festival", "a rocket launch"],
+        hard_types=["hypothetical", "negation", "near_miss"],
+        gen_notes="negation: 'the parade did not take place' (false). near_miss: 'originally scheduled for last week, it was postponed to June' (false); 'after two delays, it finally opened yesterday' (true). Avoid absolute dates without context.",
+    ),
+}
+
+# ---------------------------------------------------------------- tweets (flagship task)
+
+TWEET_LEVELS = [
+    "Strongly bearish: the author's view or the reported news points clearly to a large fall (selling, shorting, severe bad news)",
+    "Mildly bearish: leans negative; suggests some decline or underperformance",
+    "Neutral: no directional implication (routine or in-line news, balanced views, or undecided)",
+    "Mildly bullish: leans positive; suggests some gains",
+    "Strongly bullish: the author's view or the reported news points clearly to a large rise (buying heavily, hype, major good news)",
+]
+
+TASKS["T01"] = dict(
+    primitive="tweets",
+    domain="tweets about publicly traded companies, using FICTIONAL company names and $TICKERS",
+    labels=list(range(5)),
+    questions={
+        "sentiment": {
+            "type": "score",
+            "instructions": "How bullish or bearish is this tweet about the stock mentioned, considering both the author's view and the news it reports?",
+            "criteria": TWEET_LEVELS,
+        },
+        "direction": {
+            "type": "choice",
+            "instructions": "Which direction does this tweet suggest for the stock price?",
+            "criteria": {
+                "bearish": "Suggests the price will go down",
+                "neutral": "No clear direction either way",
+                "bullish": "Suggests the price will go up",
+            },
+        },
+        "expects_rise": {
+            "type": "noul",
+            "instructions": "Does this tweet suggest the stock price will rise?",
+            "criteria": {"true": "The author's view or the reported news points to a price increase",
+                         "false": "It points to a decline, or has no clear direction"},
+        },
+    },
+    level_guide=TWEET_LEVELS,
+    subtopics=["earnings results", "a product launch", "a CEO change", "a lawsuit", "an analyst upgrade/downgrade",
+               "a factory incident", "a partnership deal", "a share buyback", "options activity", "a recall",
+               "chart/technical analysis", "a regulatory decision"],
+    writers=["retail trader", "day trader", "long-term investor", "news relay account", "sell-side style analyst",
+             "meme-stock enthusiast", "perma-bear skeptic", "options gambler", "cautious beginner investor"],
+    length_weights={"short": 0.8, "medium": 0.2},
+    length_guide={"short": "a single tweet (max 280 characters)", "medium": "a 2-3 tweet thread (use 1/, 2/, 3/)"},
+    hard_types=["sarcasm", "mixed_signals", "jargon_only"],
+    gen_notes="Use cashtags, emojis and trading slang naturally. The level reflects the direction the tweet points to (author's view and/or the news it reports). Level 2 (neutral) is routine or in-line news, balanced takes, or genuinely undecided authors. sarcasm: 'another record quarter, sure 🙄 $XYZ' (bearish). mixed_signals: 'beat on revenue but guidance slashed' with a clear overall lean. jargon_only: 'loading $ABC puts, see you at 12' (bearish), '🚀🚀 $ABC diamond hands' (bullish).",
+)
+
+# ---------------------------------------------------------------- hallucination / abstention tasks
+# The question is different for every item (written by the generator), because what is being tested is whether
+# the model admits that the text does not contain the answer.
+
+ABSTAIN_KEY = "cannot_determine"
+ABSTAIN_TEXT = "The text does not contain enough information to answer"
+HALLUC_SUBTOPICS = ["a text message between friends", "a work email", "a diary entry", "a recipe note",
+                    "a travel post", "a product question", "a school notice", "a neighborhood forum post",
+                    "a voicemail transcript", "a short news snippet", "a shopping list with comments", "a sports chat"]
+
+TASKS["H01"] = dict(
+    primitive="hallucination",
+    qtype="choice",
+    domain="short everyday texts paired with a multiple-choice question about the situation they describe",
+    labels=["answerable", "unanswerable"],
+    subtopics=HALLUC_SUBTOPICS,
+    hard_types_by_label={"answerable": ["implicit"], "unanswerable": ["tempting_guess", "related_but_missing"]},
+    gen_notes="Answerable: exactly one option is correct according to the text. Unanswerable: the text gives no basis to pick any option. "
+              "Easy unanswerable = the question is about something the text never touches (e.g. 'Is it sunny right now?' about a recipe note).",
+)
+TASKS["H02"] = dict(
+    primitive="hallucination",
+    qtype="noul",
+    domain="short everyday texts paired with a yes/no question about the situation they describe",
+    labels=[True, False, "unknown"],
+    label_shares={"unknown": 0.5, True: 0.25, False: 0.25},
+    subtopics=HALLUC_SUBTOPICS,
+    hard_types_by_label={True: ["implicit"], False: ["implicit"], "unknown": ["tempting_guess", "related_but_missing"]},
+    gen_notes="true/false: the text clearly implies yes/no. unknown: the text gives no basis for yes or no, AND without the text "
+              "yes and no are about equally likely (good: 'Is it sunny right now where the writer is?', 'Is the writer's "
+              "sister older than the writer?'; bad: 'Does the writer own a phone?' because most people do).",
+)
+
+# ---------------------------------------------------------------- helpers
+
+FINAL_N = {"choice": 50, "score": 50, "noul": 50, "tweets": 150, "hallucination": 60}
+JEV_MODEL = "jev-1.13.0"
+
+
+def labels(task):
+    t = TASKS[task]
+    if t["primitive"] == "choice":
+        return list(t["criteria"])
+    if t["primitive"] == "score":
+        return list(range(len(t["criteria"])))
+    if t["primitive"] == "noul":
+        return [True, False]
+    return t["labels"]  # tweets: levels; hallucination: plan slots
+
+
+def jev_questions(task, item=None):
+    """Exact question payload(s) sent to Jev for a task (or item, for hallucination tasks), keyed by question id."""
+    t = TASKS[task]
+    if t["primitive"] == "tweets":
+        return t["questions"]
+    if t["primitive"] == "hallucination":
+        if item is None:
+            return {}  # questions are per item
+        if t["qtype"] == "choice":
+            return {"answer": {"type": "choice", "instructions": item["question"],
+                               "criteria": {**item["options"], ABSTAIN_KEY: ABSTAIN_TEXT}}}
+        return {"answer": {"type": "noul", "instructions": item["question"]}}
+    return {"answer": {"type": t["primitive"], "instructions": t["instructions"], "criteria": t["criteria"]}}
+
+
+def tweet_targets(level):
+    """Derived ground truth for the three tweet formats."""
+    return {
+        "sentiment": level,
+        "direction": "bearish" if level <= 1 else ("neutral" if level == 2 else "bullish"),
+        "expects_rise": level >= 3,
+    }

@@ -1,0 +1,233 @@
+[
+ {
+  "task": "C01",
+  "n": 55,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 7
+ },
+ {
+  "task": "C02",
+  "n": 58,
+  "exact_agree": 0.983,
+  "kappa": 0.979,
+  "flagged": 13
+ },
+ {
+  "task": "C03",
+  "n": 60,
+  "exact_agree": 0.95,
+  "kappa": 0.943,
+  "flagged": 10
+ },
+ {
+  "task": "C04",
+  "n": 58,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 1
+ },
+ {
+  "task": "C05",
+  "n": 62,
+  "exact_agree": 0.984,
+  "kappa": 0.982,
+  "flagged": 5
+ },
+ {
+  "task": "C06",
+  "n": 70,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 2
+ },
+ {
+  "task": "C07",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 2
+ },
+ {
+  "task": "C08",
+  "n": 64,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 4
+ },
+ {
+  "task": "C09",
+  "n": 55,
+  "exact_agree": 0.982,
+  "kappa": 0.977,
+  "flagged": 3
+ },
+ {
+  "task": "C10",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 3
+ },
+ {
+  "task": "S01",
+  "n": 58,
+  "exact_agree": 0.983,
+  "kappa": 0.977,
+  "flagged": 7
+ },
+ {
+  "task": "S02",
+  "n": 65,
+  "exact_agree": 0.862,
+  "kappa": 0.827,
+  "flagged": 18
+ },
+ {
+  "task": "S03",
+  "n": 63,
+  "exact_agree": 0.857,
+  "kappa": 0.822,
+  "flagged": 17
+ },
+ {
+  "task": "S04",
+  "n": 58,
+  "exact_agree": 0.948,
+  "kappa": 0.931,
+  "flagged": 10
+ },
+ {
+  "task": "S05",
+  "n": 64,
+  "exact_agree": 0.812,
+  "kappa": 0.766,
+  "flagged": 30
+ },
+ {
+  "task": "S06",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 3
+ },
+ {
+  "task": "S07",
+  "n": 69,
+  "exact_agree": 0.812,
+  "kappa": 0.75,
+  "flagged": 23
+ },
+ {
+  "task": "S08",
+  "n": 55,
+  "exact_agree": 0.982,
+  "kappa": 0.977,
+  "flagged": 11
+ },
+ {
+  "task": "S09",
+  "n": 63,
+  "exact_agree": 0.857,
+  "kappa": 0.81,
+  "flagged": 27
+ },
+ {
+  "task": "S10",
+  "n": 57,
+  "exact_agree": 0.825,
+  "kappa": 0.795,
+  "flagged": 16
+ },
+ {
+  "task": "N01",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 0
+ },
+ {
+  "task": "N02",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 1
+ },
+ {
+  "task": "N03",
+  "n": 56,
+  "exact_agree": 0.946,
+  "kappa": 0.893,
+  "flagged": 6
+ },
+ {
+  "task": "N04",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 1
+ },
+ {
+  "task": "N05",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 5
+ },
+ {
+  "task": "N06",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 5
+ },
+ {
+  "task": "N07",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 4
+ },
+ {
+  "task": "N08",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 4
+ },
+ {
+  "task": "N09",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 2
+ },
+ {
+  "task": "N10",
+  "n": 56,
+  "exact_agree": 1.0,
+  "kappa": 1.0,
+  "flagged": 3
+ },
+ {
+  "task": "T01",
+  "n": 165,
+  "exact_agree": 0.976,
+  "kappa": 0.97,
+  "flagged": 16
+ },
+ {
+  "task": "H01",
+  "n": 66,
+  "exact_agree": 0.985,
+  "kappa": 0.98,
+  "flagged": 10
+ },
+ {
+  "task": "H02",
+  "n": 82,
+  "exact_agree": 0.963,
+  "kappa": 0.937,
+  "flagged": 3
+ }
+]

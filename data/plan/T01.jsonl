@@ -1,0 +1,165 @@
+{"id": "T01_000", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "day trader"}
+{"id": "T01_001", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "long-term investor"}
+{"id": "T01_002", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "earnings results", "writer": "long-term investor"}
+{"id": "T01_003", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "news relay account"}
+{"id": "T01_004", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a factory incident", "writer": "news relay account"}
+{"id": "T01_005", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "cautious beginner investor"}
+{"id": "T01_006", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a product launch", "writer": "long-term investor"}
+{"id": "T01_007", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "cautious beginner investor"}
+{"id": "T01_008", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "meme-stock enthusiast"}
+{"id": "T01_009", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a regulatory decision", "writer": "meme-stock enthusiast"}
+{"id": "T01_010", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a recall", "writer": "retail trader"}
+{"id": "T01_011", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "options gambler"}
+{"id": "T01_012", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "retail trader"}
+{"id": "T01_013", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "day trader"}
+{"id": "T01_014", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "retail trader"}
+{"id": "T01_015", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a share buyback", "writer": "meme-stock enthusiast"}
+{"id": "T01_016", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "news relay account"}
+{"id": "T01_017", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a partnership deal", "writer": "cautious beginner investor"}
+{"id": "T01_018", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an analyst upgrade/downgrade", "writer": "long-term investor"}
+{"id": "T01_019", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "retail trader"}
+{"id": "T01_020", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "long-term investor"}
+{"id": "T01_021", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "chart/technical analysis", "writer": "long-term investor"}
+{"id": "T01_022", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "cautious beginner investor"}
+{"id": "T01_023", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "chart/technical analysis", "writer": "news relay account"}
+{"id": "T01_024", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a recall", "writer": "news relay account"}
+{"id": "T01_025", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a recall", "writer": "perma-bear skeptic"}
+{"id": "T01_026", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "a factory incident", "writer": "sell-side style analyst"}
+{"id": "T01_027", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "jargon_only", "length": "medium", "subtopic": "a lawsuit", "writer": "long-term investor"}
+{"id": "T01_028", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "options gambler"}
+{"id": "T01_029", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a share buyback", "writer": "options gambler"}
+{"id": "T01_030", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "sell-side style analyst"}
+{"id": "T01_031", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "news relay account"}
+{"id": "T01_032", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "options activity", "writer": "perma-bear skeptic"}
+{"id": "T01_033", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a CEO change", "writer": "cautious beginner investor"}
+{"id": "T01_034", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "options gambler"}
+{"id": "T01_035", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "perma-bear skeptic"}
+{"id": "T01_036", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a share buyback", "writer": "cautious beginner investor"}
+{"id": "T01_037", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a CEO change", "writer": "news relay account"}
+{"id": "T01_038", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "cautious beginner investor"}
+{"id": "T01_039", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a CEO change", "writer": "meme-stock enthusiast"}
+{"id": "T01_040", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "news relay account"}
+{"id": "T01_041", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a factory incident", "writer": "perma-bear skeptic"}
+{"id": "T01_042", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a share buyback", "writer": "cautious beginner investor"}
+{"id": "T01_043", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "retail trader"}
+{"id": "T01_044", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "sell-side style analyst"}
+{"id": "T01_045", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "options activity", "writer": "day trader"}
+{"id": "T01_046", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a factory incident", "writer": "day trader"}
+{"id": "T01_047", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a share buyback", "writer": "cautious beginner investor"}
+{"id": "T01_048", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "sell-side style analyst"}
+{"id": "T01_049", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "earnings results", "writer": "perma-bear skeptic"}
+{"id": "T01_050", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "long-term investor"}
+{"id": "T01_051", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "options activity", "writer": "sell-side style analyst"}
+{"id": "T01_052", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "chart/technical analysis", "writer": "options gambler"}
+{"id": "T01_053", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "earnings results", "writer": "sell-side style analyst"}
+{"id": "T01_054", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "options activity", "writer": "perma-bear skeptic"}
+{"id": "T01_055", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "sell-side style analyst"}
+{"id": "T01_056", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "news relay account"}
+{"id": "T01_057", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "cautious beginner investor"}
+{"id": "T01_058", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "perma-bear skeptic"}
+{"id": "T01_059", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a recall", "writer": "retail trader"}
+{"id": "T01_060", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "long-term investor"}
+{"id": "T01_061", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "meme-stock enthusiast"}
+{"id": "T01_062", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "an analyst upgrade/downgrade", "writer": "meme-stock enthusiast"}
+{"id": "T01_063", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an analyst upgrade/downgrade", "writer": "sell-side style analyst"}
+{"id": "T01_064", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "long-term investor"}
+{"id": "T01_065", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "day trader"}
+{"id": "T01_066", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "day trader"}
+{"id": "T01_067", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "day trader"}
+{"id": "T01_068", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "meme-stock enthusiast"}
+{"id": "T01_069", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "news relay account"}
+{"id": "T01_070", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "day trader"}
+{"id": "T01_071", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "long-term investor"}
+{"id": "T01_072", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a partnership deal", "writer": "options gambler"}
+{"id": "T01_073", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "retail trader"}
+{"id": "T01_074", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "day trader"}
+{"id": "T01_075", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a product launch", "writer": "meme-stock enthusiast"}
+{"id": "T01_076", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a recall", "writer": "options gambler"}
+{"id": "T01_077", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a share buyback", "writer": "perma-bear skeptic"}
+{"id": "T01_078", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "news relay account"}
+{"id": "T01_079", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a factory incident", "writer": "meme-stock enthusiast"}
+{"id": "T01_080", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a recall", "writer": "perma-bear skeptic"}
+{"id": "T01_081", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "day trader"}
+{"id": "T01_082", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "meme-stock enthusiast"}
+{"id": "T01_083", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "options gambler"}
+{"id": "T01_084", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "news relay account"}
+{"id": "T01_085", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "day trader"}
+{"id": "T01_086", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "retail trader"}
+{"id": "T01_087", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "options gambler"}
+{"id": "T01_088", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "options activity", "writer": "sell-side style analyst"}
+{"id": "T01_089", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "sell-side style analyst"}
+{"id": "T01_090", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a recall", "writer": "sell-side style analyst"}
+{"id": "T01_091", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "news relay account"}
+{"id": "T01_092", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "options gambler"}
+{"id": "T01_093", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a recall", "writer": "day trader"}
+{"id": "T01_094", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "earnings results", "writer": "long-term investor"}
+{"id": "T01_095", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "perma-bear skeptic"}
+{"id": "T01_096", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "perma-bear skeptic"}
+{"id": "T01_097", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "cautious beginner investor"}
+{"id": "T01_098", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "sell-side style analyst"}
+{"id": "T01_099", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "meme-stock enthusiast"}
+{"id": "T01_100", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a lawsuit", "writer": "long-term investor"}
+{"id": "T01_101", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "cautious beginner investor"}
+{"id": "T01_102", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "meme-stock enthusiast"}
+{"id": "T01_103", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "meme-stock enthusiast"}
+{"id": "T01_104", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a regulatory decision", "writer": "cautious beginner investor"}
+{"id": "T01_105", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "meme-stock enthusiast"}
+{"id": "T01_106", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "chart/technical analysis", "writer": "perma-bear skeptic"}
+{"id": "T01_107", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a lawsuit", "writer": "long-term investor"}
+{"id": "T01_108", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a recall", "writer": "cautious beginner investor"}
+{"id": "T01_109", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "a lawsuit", "writer": "cautious beginner investor"}
+{"id": "T01_110", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "jargon_only", "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "cautious beginner investor"}
+{"id": "T01_111", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a lawsuit", "writer": "perma-bear skeptic"}
+{"id": "T01_112", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "meme-stock enthusiast"}
+{"id": "T01_113", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "chart/technical analysis", "writer": "meme-stock enthusiast"}
+{"id": "T01_114", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a recall", "writer": "meme-stock enthusiast"}
+{"id": "T01_115", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a CEO change", "writer": "long-term investor"}
+{"id": "T01_116", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an analyst upgrade/downgrade", "writer": "perma-bear skeptic"}
+{"id": "T01_117", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a regulatory decision", "writer": "long-term investor"}
+{"id": "T01_118", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "perma-bear skeptic"}
+{"id": "T01_119", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "a partnership deal", "writer": "meme-stock enthusiast"}
+{"id": "T01_120", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "cautious beginner investor"}
+{"id": "T01_121", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "news relay account"}
+{"id": "T01_122", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "options gambler"}
+{"id": "T01_123", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "long-term investor"}
+{"id": "T01_124", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "meme-stock enthusiast"}
+{"id": "T01_125", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "sell-side style analyst"}
+{"id": "T01_126", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "long-term investor"}
+{"id": "T01_127", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "earnings results", "writer": "day trader"}
+{"id": "T01_128", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "options activity", "writer": "retail trader"}
+{"id": "T01_129", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "options gambler"}
+{"id": "T01_130", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a CEO change", "writer": "options gambler"}
+{"id": "T01_131", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "sell-side style analyst"}
+{"id": "T01_132", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "cautious beginner investor"}
+{"id": "T01_133", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "a CEO change", "writer": "day trader"}
+{"id": "T01_134", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "a CEO change", "writer": "meme-stock enthusiast"}
+{"id": "T01_135", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "sell-side style analyst"}
+{"id": "T01_136", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a share buyback", "writer": "perma-bear skeptic"}
+{"id": "T01_137", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a recall", "writer": "news relay account"}
+{"id": "T01_138", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "meme-stock enthusiast"}
+{"id": "T01_139", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a regulatory decision", "writer": "retail trader"}
+{"id": "T01_140", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a partnership deal", "writer": "retail trader"}
+{"id": "T01_141", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "long-term investor"}
+{"id": "T01_142", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a recall", "writer": "retail trader"}
+{"id": "T01_143", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "chart/technical analysis", "writer": "cautious beginner investor"}
+{"id": "T01_144", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "retail trader"}
+{"id": "T01_145", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "meme-stock enthusiast"}
+{"id": "T01_146", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a CEO change", "writer": "options gambler"}
+{"id": "T01_147", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "a partnership deal", "writer": "sell-side style analyst"}
+{"id": "T01_148", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "meme-stock enthusiast"}
+{"id": "T01_149", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a regulatory decision", "writer": "perma-bear skeptic"}
+{"id": "T01_150", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a regulatory decision", "writer": "day trader"}
+{"id": "T01_151", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a lawsuit", "writer": "retail trader"}
+{"id": "T01_152", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a regulatory decision", "writer": "sell-side style analyst"}
+{"id": "T01_153", "task_id": "T01", "primitive": "tweets", "label": 1, "difficulty": "medium", "hard_type": null, "length": "medium", "subtopic": "an analyst upgrade/downgrade", "writer": "meme-stock enthusiast"}
+{"id": "T01_154", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "sarcasm", "length": "medium", "subtopic": "a recall", "writer": "meme-stock enthusiast"}
+{"id": "T01_155", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "a recall", "writer": "perma-bear skeptic"}
+{"id": "T01_156", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "hard", "hard_type": "mixed_signals", "length": "medium", "subtopic": "a factory incident", "writer": "options gambler"}
+{"id": "T01_157", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "easy", "hard_type": null, "length": "medium", "subtopic": "earnings results", "writer": "meme-stock enthusiast"}
+{"id": "T01_158", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "sarcasm", "length": "short", "subtopic": "a partnership deal", "writer": "long-term investor"}
+{"id": "T01_159", "task_id": "T01", "primitive": "tweets", "label": 4, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "meme-stock enthusiast"}
+{"id": "T01_160", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "a product launch", "writer": "cautious beginner investor"}
+{"id": "T01_161", "task_id": "T01", "primitive": "tweets", "label": 2, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "an analyst upgrade/downgrade", "writer": "long-term investor"}
+{"id": "T01_162", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "hard", "hard_type": "mixed_signals", "length": "short", "subtopic": "a lawsuit", "writer": "long-term investor"}
+{"id": "T01_163", "task_id": "T01", "primitive": "tweets", "label": 3, "difficulty": "easy", "hard_type": null, "length": "short", "subtopic": "chart/technical analysis", "writer": "long-term investor"}
+{"id": "T01_164", "task_id": "T01", "primitive": "tweets", "label": 0, "difficulty": "medium", "hard_type": null, "length": "short", "subtopic": "a factory incident", "writer": "meme-stock enthusiast"}

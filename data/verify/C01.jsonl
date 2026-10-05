@@ -1,0 +1,55 @@
+{"id": "C01_000", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_001", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_002", "label": "account_access", "ambiguous": false, "note": ""}
+{"id": "C01_003", "label": "cancellation", "ambiguous": true, "note": "Mostly reads as a billing complaint about repeated price hikes, but the explicit request is to stop auto-renewal and fully close the account."}
+{"id": "C01_004", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_005", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_006", "label": "account_access", "ambiguous": true, "note": "Framed as a login problem across multiple browsers, but instant session expiry right after sign-in could also be filed as a session-handling bug."}
+{"id": "C01_007", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_008", "label": "account_access", "ambiguous": false, "note": ""}
+{"id": "C01_009", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_010", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_011", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_012", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_013", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_014", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_015", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_016", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_017", "label": "account_access", "ambiguous": true, "note": "Described as a login/session verification failure despite correct credentials, which could instead be treated as an authentication bug."}
+{"id": "C01_018", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_019", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_020", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_021", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_022", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_023", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_024", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_025", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_026", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_027", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_028", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_029", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_030", "label": "account_access", "ambiguous": false, "note": ""}
+{"id": "C01_031", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_032", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_033", "label": "account_access", "ambiguous": false, "note": ""}
+{"id": "C01_034", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_035", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_036", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_037", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_038", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_039", "label": "account_access", "ambiguous": false, "note": ""}
+{"id": "C01_040", "label": "account_access", "ambiguous": true, "note": "Presented as a login problem (repeated forced sign-outs), but could instead be treated as a session-management bug since credentials aren't in question."}
+{"id": "C01_041", "label": "account_access", "ambiguous": true, "note": "Tied to a recent SSO/identity-provider switch, which fits single sign-on issues, but the blank hanging screen could also be read as a loading/rendering bug."}
+{"id": "C01_042", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_043", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_044", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_045", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_046", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_047", "label": "billing", "ambiguous": false, "note": ""}
+{"id": "C01_048", "label": "cancellation", "ambiguous": false, "note": ""}
+{"id": "C01_049", "label": "account_access", "ambiguous": false, "note": ""}
+{"id": "C01_050", "label": "feature_request", "ambiguous": false, "note": ""}
+{"id": "C01_051", "label": "cancellation", "ambiguous": true, "note": "Phrased around stopping the monthly charge rather than explicitly asking to cancel, so it could be read as a billing request instead of formal cancellation."}
+{"id": "C01_052", "label": "account_access", "ambiguous": true, "note": "Verification failures hit only the newer email domain right after a migration, so this could be read as an authentication bug rather than a standard access issue."}
+{"id": "C01_053", "label": "bug_report", "ambiguous": false, "note": ""}
+{"id": "C01_054", "label": "cancellation", "ambiguous": false, "note": ""}

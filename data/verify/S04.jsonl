@@ -1,0 +1,58 @@
+{"id": "S04_000", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_001", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_002", "label": 2, "ambiguous": true, "note": "Describes refraction and reflection precisely but without defining the terms, between hobbyist and general audience."}
+{"id": "S04_003", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_004", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_005", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_006", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_007", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_008", "label": 3, "ambiguous": true, "note": "Mostly plain project notes but the compiler paragraph uses dense unexplained allocator jargon."}
+{"id": "S04_009", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_010", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_011", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_012", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_013", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_014", "label": 1, "ambiguous": true, "note": "Very analogy-heavy like a child explanation, but explicitly names and defines antibodies and memory cells."}
+{"id": "S04_015", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_016", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_017", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_018", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_019", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_020", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_021", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_022", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_023", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_024", "label": 2, "ambiguous": true, "note": "Mixes a plain-language compiler explainer with unexplained jargon like sharding and dual-write elsewhere in the report."}
+{"id": "S04_025", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_026", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_027", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_028", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_029", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_030", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_031", "label": 0, "ambiguous": true, "note": "Names GPS and time delay but doesn't really explain any technical term."}
+{"id": "S04_032", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_033", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_034", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_035", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_036", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_037", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_038", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_039", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_040", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_041", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_042", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_043", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_044", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_045", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_046", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_047", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S04_048", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S04_049", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_050", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_051", "label": 0, "ambiguous": true, "note": "Plain description of compiling with no named technical term or explicit analogy."}
+{"id": "S04_052", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_053", "label": 0, "ambiguous": true, "note": "Analogy-based black hole explainer aimed at a general reader rather than literally a child."}
+{"id": "S04_054", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S04_055", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S04_056", "label": 2, "ambiguous": true, "note": "Chatty personal update with an embedded hobbyist-level battery-pack explanation."}
+{"id": "S04_057", "label": 2, "ambiguous": true, "note": "Casual tone but uses routing/subnet terms without explaining them."}

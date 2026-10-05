@@ -1,0 +1,65 @@
+{"id": "S02_000", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S02_001", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S02_002", "label": 2, "ambiguous": true, "note": "The repeat occurrence (second time) could push this toward level 3 despite the calm tone."}
+{"id": "S02_003", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S02_004", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_005", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_006", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_007", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S02_008", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_009", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_010", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S02_011", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_012", "label": 3, "ambiguous": true, "note": "The message is brief and measured, so a reasonable annotator could score it level 2 despite the repeated-failure/threat-to-stop content."}
+{"id": "S02_013", "label": 2, "ambiguous": true, "note": "The brief, wry tone could also be read as only mildly annoyed (level 1)."}
+{"id": "S02_014", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_015", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S02_016", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_017", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_018", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_019", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_020", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S02_021", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_022", "label": 0, "ambiguous": true, "note": "The 'double take' at a $1,240 unrecognized charge could be read as mild concern (level 1) rather than no annoyance at all."}
+{"id": "S02_023", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_024", "label": 2, "ambiguous": true, "note": "A second billing cycle despite a cancellation confirmation could be judged level 3 given the repeated-failure pattern."}
+{"id": "S02_025", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_026", "label": 2, "ambiguous": true, "note": "The two-day duration and exhausted troubleshooting steps could be read as level 3 (very frustrated) rather than level 2."}
+{"id": "S02_027", "label": 3, "ambiguous": false, "note": ""}
+{"id": "S02_028", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_029", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_030", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_031", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_032", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_033", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_034", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_035", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_036", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_037", "label": 3, "ambiguous": true, "note": "The conditional threat to dispute charges could push this to level 4, though the tone stays composed and reluctant rather than hostile."}
+{"id": "S02_038", "label": 3, "ambiguous": true, "note": "The sustained sarcasm without an explicit threat or ultimatum could also read as furious (level 4)."}
+{"id": "S02_039", "label": 2, "ambiguous": true, "note": "The word 'again' implies a repeat problem, which could push this toward level 3."}
+{"id": "S02_040", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_041", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_042", "label": 3, "ambiguous": true, "note": "The matter-of-fact delivery lacks explicit emotional language, so a reasonable annotator could score this level 2."}
+{"id": "S02_043", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S02_044", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_045", "label": 3, "ambiguous": true, "note": "The composed, non-hostile phrasing without an explicit ultimatum could also be scored level 2."}
+{"id": "S02_046", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_047", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_048", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S02_049", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_050", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_051", "label": 4, "ambiguous": false, "note": ""}
+{"id": "S02_052", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_053", "label": 2, "ambiguous": true, "note": "The repeated failure (second time this week) with photographic proof could be judged level 3."}
+{"id": "S02_054", "label": 0, "ambiguous": false, "note": ""}
+{"id": "S02_055", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_056", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_057", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_058", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_059", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_060", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_061", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_062", "label": 1, "ambiguous": false, "note": ""}
+{"id": "S02_063", "label": 2, "ambiguous": false, "note": ""}
+{"id": "S02_064", "label": 2, "ambiguous": false, "note": ""}

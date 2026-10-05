@@ -1,0 +1,66 @@
+{"id": "H01_000", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_001", "label": "fifty_five_minutes", "ambiguous": false, "note": ""}
+{"id": "H01_002", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_003", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_004", "label": "forty_five_minutes", "ambiguous": false, "note": ""}
+{"id": "H01_005", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_006", "label": "cannot_determine", "ambiguous": true, "note": "Recipe includes jalapenos and paprika which could suggest some heat, but the text never states how spicy the finished dish actually is."}
+{"id": "H01_007", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_008", "label": "yes_top_rack_only", "ambiguous": false, "note": ""}
+{"id": "H01_009", "label": "three_oh_five", "ambiguous": false, "note": ""}
+{"id": "H01_010", "label": "two_and_half_hours", "ambiguous": false, "note": ""}
+{"id": "H01_011", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_012", "label": "rainy", "ambiguous": true, "note": "Inferred from 'more umbrellas than sunglasses' and the ironic quotes around 'sunny', though weather is never stated directly."}
+{"id": "H01_013", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_014", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_015", "label": "monday", "ambiguous": false, "note": ""}
+{"id": "H01_016", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_017", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_018", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_019", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_020", "label": "wine", "ambiguous": false, "note": ""}
+{"id": "H01_021", "label": "child_is_sick", "ambiguous": true, "note": "Waking up 'super warm and clingy' strongly suggests fever/illness, though the text never uses the word sick."}
+{"id": "H01_022", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_023", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_024", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_025", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_026", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_027", "label": "tuesday_night", "ambiguous": false, "note": ""}
+{"id": "H01_028", "label": "oak_street", "ambiguous": false, "note": ""}
+{"id": "H01_029", "label": "yes_hosting_gathering", "ambiguous": false, "note": ""}
+{"id": "H01_030", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_031", "label": "likely_to_miss", "ambiguous": false, "note": ""}
+{"id": "H01_032", "label": "cannot_determine", "ambiguous": true, "note": "Pickles, ice cream, saltines and ginger ale evoke the classic pregnancy-craving trope, but the text never states pregnancy and the same items fit recovering from an upset stomach."}
+{"id": "H01_033", "label": "fourteen_thousand", "ambiguous": false, "note": ""}
+{"id": "H01_034", "label": "large_outdoor_gathering", "ambiguous": true, "note": "Inferred from the loud max volume, long battery life, and range described, plus the buyer's own 'rooftop get-together' framing, though suitability is never stated outright."}
+{"id": "H01_035", "label": "two_years", "ambiguous": false, "note": ""}
+{"id": "H01_036", "label": "will_be_benched", "ambiguous": true, "note": "Relies on inferring that missing the bus made Jordan late, triggering the coach's known rule of benching late arrivals; not stated outright."}
+{"id": "H01_037", "label": "three_seventy_five", "ambiguous": false, "note": ""}
+{"id": "H01_038", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_039", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_040", "label": "yes_found", "ambiguous": false, "note": ""}
+{"id": "H01_041", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_042", "label": "pho", "ambiguous": false, "note": ""}
+{"id": "H01_043", "label": "fifteen_dollars", "ambiguous": false, "note": ""}
+{"id": "H01_044", "label": "ninety_dollars", "ambiguous": false, "note": ""}
+{"id": "H01_045", "label": "three", "ambiguous": false, "note": ""}
+{"id": "H01_046", "label": "inbox_full", "ambiguous": false, "note": ""}
+{"id": "H01_047", "label": "four_pm", "ambiguous": false, "note": ""}
+{"id": "H01_048", "label": "yes_won", "ambiguous": true, "note": "Implied by the celebratory mood, the 'Four More Years' cake, and taking down the opponent's yard signs, with the writer noting that only happens 'once you know which way things went'; no result is announced explicitly."}
+{"id": "H01_049", "label": "112_108", "ambiguous": false, "note": ""}
+{"id": "H01_050", "label": "14_32_utc", "ambiguous": false, "note": ""}
+{"id": "H01_051", "label": "cannot_determine", "ambiguous": true, "note": "The message describes a general snow-day policy ('whenever we get heavy snow...') rather than confirming heavy snow or dismissal is happening today."}
+{"id": "H01_052", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_053", "label": "jellyfish_sting", "ambiguous": false, "note": ""}
+{"id": "H01_054", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_055", "label": "cannot_determine", "ambiguous": true, "note": "The comment is skeptical about price versus brand reputation, but it never actually states the bag's build quality, so 'low quality' would be an inference from tone alone."}
+{"id": "H01_056", "label": "500_per_minute", "ambiguous": false, "note": ""}
+{"id": "H01_057", "label": "wednesday", "ambiguous": false, "note": ""}
+{"id": "H01_058", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_059", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_060", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_061", "label": "yes_lost_badly", "ambiguous": false, "note": ""}
+{"id": "H01_062", "label": "october_10", "ambiguous": false, "note": ""}
+{"id": "H01_063", "label": "yes_likely_delayed", "ambiguous": true, "note": "Needing to special-order the countertop slab typically adds lead time, suggesting a likely delay, though the text doesn't say so explicitly."}
+{"id": "H01_064", "label": "cannot_determine", "ambiguous": false, "note": ""}
+{"id": "H01_065", "label": "cannot_determine", "ambiguous": false, "note": ""}
