@@ -34,6 +34,8 @@ RES = Path(__file__).parent / "results"
 B = 2000
 N_BINS = 10
 FAMILIES = ["choice", "score", "noul", "tweets_score", "tweets_choice", "tweets_noul"]
+FAMILY_LABELS = {"choice": "Choice", "score": "Scale (±1)", "noul": "Yes/no", "tweets_score": "Tweets: scale (±1)",
+                 "tweets_choice": "Tweets: 3-way", "tweets_noul": "Tweets: rise?"}
 MODELS = {  # key (column prefix) -> display name, kind, results folder, USD per input / output token
     "jev": dict(name="Jev", kind="prob", folder="jev", model_id="jev-1.13.0", price_in=0.042 / 1e6, price_out=0.0),
     "luna": dict(name="Decisions", kind="prob", folder="decisions", model_id="gpt-6-luna (OpenAI Decisions)",
@@ -41,6 +43,7 @@ MODELS = {  # key (column prefix) -> display name, kind, results folder, USD per
     "haiku": dict(name="Haiku", kind="label", folder="haiku", model_id="claude-haiku-4-5",
                   price_in=1.00 / 1e6, price_out=5.00 / 1e6),
 }
+COLORS = {"jev": "#3b6fb6", "luna": "#e07b39", "haiku": "#5a9e5a"}
 NO_ANSWER = "__no_answer__"  # refusal / invalid answer: counts as wrong
 
 
@@ -62,14 +65,20 @@ def reliability(conf, correct, n_bins=N_BINS):
     return [(conf[b].mean(), correct[b].mean(), len(b)) for b in bins if len(b)]
 
 
-def wilson(k, n):
-    """95% Wilson interval for a proportion k/n (as percentages)."""
-    if n == 0:
-        return "-"
+def wilson_ci(k, n):
+    """95% Wilson interval for a proportion k/n -> (p, lo, hi) as fractions."""
     z, p = 1.96, k / n
     c = (p + z * z / (2 * n)) / (1 + z * z / n)
     h = z * np.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / (1 + z * z / n)
-    return f"{100 * p:.0f}% [{max(0, 100 * (c - h)):.0f}-{min(100, 100 * (c + h)):.0f}]"
+    return p, max(0.0, c - h), min(1.0, c + h)
+
+
+def wilson(k, n):
+    """Same as wilson_ci, formatted as percentages."""
+    if n == 0:
+        return "-"
+    p, lo, hi = wilson_ci(k, n)
+    return f"{100 * p:.0f}% [{100 * lo:.0f}-{100 * hi:.0f}]"
 
 
 # ---------------------------------------------------------------- data assembly
@@ -243,7 +252,8 @@ def primary(df, rng):
         res = cluster_bootstrap(d, stats, rng)
         for m in models:
             row = {"family": fam, "model": MODELS[m]["name"], "metric": "within +-1 level" if scale else "exact",
-                   "n": int(d[f"{m}_ok"].notna().sum()), "accuracy": fmt(res[f"{m}:acc"])}
+                   "n": int(d[f"{m}_ok"].notna().sum()), "accuracy": fmt(res[f"{m}:acc"]), "_key": m,
+                   "_acc": res[f"{m}:acc"][0], "_acc_lo": res[f"{m}:acc"][1], "_acc_hi": res[f"{m}:acc"][2]}
             if scale:
                 row["exact level"] = fmt(res[f"{m}:exact"])
             if m in prob_models:
@@ -265,36 +275,38 @@ def primary(df, rng):
 
 
 def plain_summary(per_model, pairs):
-    """Plain-Spanish tables: accuracy per model, who beats whom, calibration."""
+    """Plain-language tables: accuracy per model, who beats whom, calibration."""
     if per_model.empty:
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
     order = [c["name"] for c in MODELS.values()]
+
+    def by_family(t):
+        t = t.reindex([f for f in FAMILIES if f in t.index])
+        t.index = [FAMILY_LABELS[f] for f in t.index]
+        return t.rename_axis("question type").reset_index()
     acc = per_model.pivot_table(index="family", columns="model", values="accuracy", aggfunc="first")
     acc = acc[[c for c in order if c in acc.columns]]
-    acc.insert(0, "metrica", per_model.groupby("family")["metric"].first().map(
-        lambda x: "acierta +-1 nivel" if x != "exact" else "exacta"))
-    acc = acc.reindex([f for f in FAMILIES if f in acc.index]).reset_index().rename(columns={"family": "que se mide"})
+    acc.insert(0, "counts as correct", per_model.groupby("family")["metric"].first().map(
+        lambda x: "within ±1 level" if x != "exact" else "exact answer"))
+    acc = by_family(acc)
     verdicts = pd.DataFrame()
     if not pairs.empty:
         def verdict(r):
             diff = float(r["difference"].split(" ")[0]) * 100
             if r["_lo"] > 0:
-                return f"{r['_a']} mejor ({diff:+.1f} pp)"
+                return f"{r['_a']} better ({diff:+.1f} pp)"
             if r["_hi"] < 0:
-                return f"{r['_b']} mejor ({diff:+.1f} pp)"
-            return f"sin diferencia significativa ({diff:+.1f} pp)"
-        v = pairs.assign(veredicto=pairs.apply(verdict, axis=1))
-        verdicts = v.pivot_table(index="family", columns="comparison", values="veredicto", aggfunc="first")
-        verdicts = verdicts[list(dict.fromkeys(c for c in pairs["comparison"] if c in verdicts.columns))]
-        verdicts = verdicts.reindex([f for f in FAMILIES if f in verdicts.index]).reset_index().rename(
-            columns={"family": "que se mide"})
+                return f"{r['_b']} better ({diff:+.1f} pp)"
+            return f"no significant difference ({diff:+.1f} pp)"
+        v = pairs.assign(verdict=pairs.apply(verdict, axis=1))
+        verdicts = v.pivot_table(index="family", columns="comparison", values="verdict", aggfunc="first")
+        verdicts = by_family(verdicts[list(dict.fromkeys(c for c in pairs["comparison"] if c in verdicts.columns))])
     cal = per_model[per_model["_cal_p"].notna()] if "_cal_p" in per_model else pd.DataFrame()
     if len(cal):
-        cal = cal.assign(c=cal.apply(lambda r: ("no (p<0.05), " if r["_cal_p"] < 0.05 else "si, ")
+        cal = cal.assign(c=cal.apply(lambda r: ("no (p<0.05), " if r["_cal_p"] < 0.05 else "yes, ")
                                      + "ECE " + r["calibration ECE"].split(" ")[0], axis=1))
         cal = cal.pivot_table(index="family", columns="model", values="c", aggfunc="first")
-        cal = cal[[c for c in order if c in cal.columns]]
-        cal = cal.reindex([f for f in FAMILIES if f in cal.index]).reset_index().rename(columns={"family": "que se mide"})
+        cal = by_family(cal[[c for c in order if c in cal.columns]])
     return acc, verdicts, cal
 
 
@@ -370,29 +382,46 @@ def halluc_summary(df):
     if len(c):
         un, an = c[c.gold == ABSTAIN_KEY], c[c.gold != ABSTAIN_KEY]
         for what, f in [
-            ("H01: elige 'no se puede determinar' cuando el texto NO tiene la respuesta (mas es mejor)",
+            ("H01: picks 'cannot determine' when the text does NOT contain the answer (higher is better)",
              lambda col: ((un[col] == ABSTAIN_KEY).sum(), un[col].notna().sum())),
-            ("H01: elige 'no se puede determinar' cuando el texto SI tiene la respuesta (menos es mejor)",
+            ("H01: picks 'cannot determine' when the text DOES contain the answer (lower is better)",
              lambda col: ((an[col] == ABSTAIN_KEY).sum(), an[col].notna().sum())),
-            ("H01: acierta la opcion cuando el texto tiene la respuesta (mas es mejor)",
+            ("H01: picks the right option when the text contains the answer (higher is better)",
              lambda col: ((an[col] == an.gold).sum(), an[col].notna().sum()))]:
-            rows.append({"medicion": what, **{names[m]: wilson(*f(f"{m}_pred")) for m in models}})
+            rows.append({"measurement": what, **{names[m]: wilson(*f(f"{m}_pred")) for m in models}})
     n = df[df.family == "halluc_noul"]
     if len(n):
         un, an = n[n.gold == "unknown"], n[n.gold != "unknown"]
         probs = {m: (un[f"{m}_p"].dropna() if f"{m}_p" in un else pd.Series(dtype=float)) for m in models}
         na = {m: (len(probs[m]) == 0) for m in models}
         rows += [
-            {"medicion": "H02 sin informacion: P(si) promedio (ideal 0.50)",
+            {"measurement": "H02 no information: mean P(yes) (ideal 0.50)",
              **{names[m]: "n/a" if na[m] else f"{probs[m].mean():.2f}" for m in models}},
-            {"medicion": "H02 sin informacion: dice 'no se', 0.3 <= P <= 0.7 (mas es mejor)",
+            {"measurement": "H02 no information: says 'I can't tell', 0.3 <= P <= 0.7 (higher is better)",
              **{names[m]: "n/a" if na[m] else wilson(((probs[m] >= .3) & (probs[m] <= .7)).sum(), len(probs[m])) for m in models}},
-            {"medicion": "H02 sin informacion: alucina con confianza, P < 0.2 o P > 0.8 (menos es mejor)",
+            {"measurement": "H02 no information: confident answer, P < 0.2 or P > 0.8 (lower is better)",
              **{names[m]: "n/a" if na[m] else wilson(((probs[m] < .2) | (probs[m] > .8)).sum(), len(probs[m])) for m in models}},
-            {"medicion": "H02 controles con respuesta: acierta (mas es mejor)",
+            {"measurement": "H02 answerable controls: correct (higher is better)",
              **{names[m]: wilson(an[f"{m}_ok"].dropna().astype(bool).sum(), an[f"{m}_ok"].notna().sum()) for m in models}},
         ]
     return pd.DataFrame(rows)
+
+
+def abstention_rates(df):
+    """For the summary chart: {model_key: {"H01": (p, lo, hi), "H02": (p, lo, hi)}} on the no-answer questions."""
+    out = {}
+    c = df[(df.family == "halluc_choice") & (df.gold == ABSTAIN_KEY)]
+    n = df[(df.family == "halluc_noul") & (df.gold == "unknown")]
+    for m in present(df):
+        r = {}
+        k = c[f"{m}_pred"].notna().sum()
+        if k:
+            r["H01"] = wilson_ci((c[f"{m}_pred"] == ABSTAIN_KEY).sum(), k)
+        p = n[f"{m}_p"].dropna() if f"{m}_p" in n else pd.Series(dtype=float)
+        if len(p):
+            r["H02"] = wilson_ci(((p >= .3) & (p <= .7)).sum(), len(p))
+        out[m] = r
+    return out
 
 
 def human_reference():
@@ -404,17 +433,17 @@ def human_reference():
         return pd.DataFrame()
     gold = {it["id"]: it for p in FINAL_N for it in read_jsonl(D / "final" / f"{p}.jsonl")}
     rows = [r for r in csv.DictReader(open(path, encoding="utf-8")) if r["tu_respuesta"].strip()]
-    out = {"categorias y si/no": [0, 0, None], "escalas": [0, 0, 0]}
+    out = {"categories and yes/no": [0, 0, None], "ordinal scales": [0, 0, 0]}
     for r in rows:
         g = gold[r["id"]]["label"]
         scale = isinstance(g, int) and not isinstance(g, bool)
-        k = "escalas" if scale else "categorias y si/no"
+        k = "ordinal scales" if scale else "categories and yes/no"
         out[k][1] += 1
         out[k][0] += normalize(r["tu_respuesta"]) == normalize(g)
         if scale and r["tu_respuesta"].strip().lstrip("-").isdigit():
             out[k][2] += abs(int(r["tu_respuesta"]) - g) <= 1
-    return pd.DataFrame([{"tipo": k, "items revisados": n, "coincidencia exacta": wilson(a, n),
-                          "dentro de +-1 nivel": wilson(w, n) if w is not None else "-"}
+    return pd.DataFrame([{"type": k, "items reviewed": n, "exact agreement": wilson(a, n),
+                          "within ±1 level": wilson(w, n) if w is not None else "-"}
                          for k, (a, n, w) in out.items() if n])
 
 
@@ -437,11 +466,13 @@ def speed_and_cost(results):
             nq = len(recs)
             tin, tout = sum(r["input_tokens"] for r in recs), sum(r["output_tokens"] for r in recs)
         cost = tin * cfg["price_in"] + tout * cfg["price_out"]
-        rows.append({"modelo": cfg["name"], "requests": len(recs), "preguntas": nq,
-                     "latencia mediana (ms)": round(float(np.median(lat))), "p90 (ms)": round(float(np.percentile(lat, 90))),
+        logged = any("attempts" in r for r in recs)
+        rows.append({"model": cfg["name"], "requests": len(recs), "questions": nq,
+                     "median latency (ms)": round(float(np.median(lat))), "p90 (ms)": round(float(np.percentile(lat, 90))),
                      "p99 (ms)": round(float(np.percentile(lat, 99))),
-                     "requests con reintento": int(sum(r.get("attempts", 1) > 1 for r in recs)),
-                     "costo total (USD)": round(cost, 4), "costo por 1000 preguntas (USD)": round(1000 * cost / nq, 4)})
+                     "requests retried": int(sum(r.get("attempts", 1) > 1 for r in recs)) if logged else "not logged",
+                     "total cost (USD)": round(cost, 4), "cost per 1,000 questions (USD)": round(1000 * cost / nq, 4),
+                     "_key": m})
     return pd.DataFrame(rows)
 
 
@@ -490,6 +521,74 @@ def figures(df, out):
     plt.close(fig)
 
 
+def bars(ax, groups, values, models, fmt_label):
+    """Grouped bars: values[m][g] = (point, lo, hi) or None (drawn as 'n/a')."""
+    w, x = 0.8 / len(models), np.arange(len(groups))
+    for i, m in enumerate(models):
+        xs = x + (i - (len(models) - 1) / 2) * w
+        for xi, g in zip(xs, groups):
+            v = values[m].get(g)
+            if v is None:
+                ax.text(xi, 0, "n/a", ha="center", va="bottom", fontsize=7, color="grey")
+                continue
+            pt, lo, hi = v
+            yerr = None if lo is None else [[max(0, pt - lo)], [max(0, hi - pt)]]
+            ax.bar(xi, pt, w, color=COLORS[m], yerr=yerr, capsize=2, ecolor="#555", error_kw={"lw": 0.8},
+                   label=MODELS[m]["name"] if g == groups[0] else None)
+            ax.text(xi, (hi if lo is not None else pt), fmt_label(pt), ha="center", va="bottom", fontsize=7)
+    ax.set_xticks(x, groups)
+    ax.margins(x=0.06)
+    ax.spines[["top", "right"]].set_visible(False)
+
+
+def summary_figure(df, per_model, speed, out):
+    """One-glance bar chart: errors per question type, abstention, latency, cost."""
+    models = present(df)
+    if per_model.empty or not models:
+        return
+    fig, axes = plt.subplots(2, 2, figsize=(13, 8.5), gridspec_kw={"width_ratios": [1.6, 1]})
+    fams = [f for f in FAMILIES if f in set(per_model.family)]
+    pm = per_model.set_index(["_key", "family"])
+    lab = {f: FAMILY_LABELS[f].replace(": ", ":\n") for f in fams}
+    err = {m: {lab[f]: (100 * (1 - pm.loc[(m, f), "_acc"]), 100 * (1 - pm.loc[(m, f), "_acc_hi"]),
+                                  100 * (1 - pm.loc[(m, f), "_acc_lo"])) for f in fams if (m, f) in pm.index}
+           for m in models}
+    ax = axes[0, 0]
+    bars(ax, [lab[f] for f in fams], err, models, lambda v: f"{v:.1f}")
+    ax.set(ylabel="error rate (%)", title="Error rate by question type (lower is better; whiskers = 95% CI)")
+    ax.legend(frameon=False)
+
+    ab = abstention_rates(df)
+    groups = ["H01: multiple choice\n(picks 'cannot determine')", "H02: yes/no\n(0.3 ≤ P(yes) ≤ 0.7)"]
+    vals = {m: {g: (lambda t: (100 * t[0], 100 * t[1], 100 * t[2]))(ab[m][k]) if k in ab.get(m, {}) else None
+                for g, k in zip(groups, ["H01", "H02"])} for m in models}
+    ax = axes[0, 1]
+    bars(ax, groups, vals, models, lambda v: f"{v:.0f}%")
+    ax.set(ylabel="% of no-information questions", ylim=(0, 105),
+           title="Says 'I can't tell' when the text has no answer\n(higher is better; whiskers = 95% CI)")
+
+    sp = speed.set_index("_key") if len(speed) else pd.DataFrame()
+    sp_models = [m for m in models if m in sp.index]
+    for ax, col, fmt_label, title, note in [
+            (axes[1, 0], "median latency (ms)", lambda v: f"{v:,.0f} ms", "Median latency per request (lower is better)",
+             "Jev and Decisions: one request per text (all its questions); Haiku: one request per question"),
+            (axes[1, 1], "cost per 1,000 questions (USD)", lambda v: f"${v:.3f}", "Cost per 1,000 questions, USD (lower is better)",
+             "list prices x tokens measured in this run")]:
+        vals = [float(sp.loc[m, col]) for m in sp_models]
+        ax.bar([MODELS[m]["name"] for m in sp_models], vals, 0.6, color=[COLORS[m] for m in sp_models])
+        for i, v in enumerate(vals):
+            ax.text(i, v, fmt_label(v), ha="center", va="bottom", fontsize=9)
+        ax.set_title(title)
+        ax.set_xlabel(note, fontsize=8, color="#555")
+        ax.margins(y=0.12)
+        ax.spines[["top", "right"]].set_visible(False)
+    fig.suptitle(f"Jev vs OpenAI Decisions vs Claude Haiku 4.5 on {df['id'].nunique():,} synthetic items "
+                 f"({len(df):,} questions)", fontsize=13, fontweight="bold")
+    fig.tight_layout()
+    fig.savefig(out / "summary.png", dpi=130)
+    plt.close(fig)
+
+
 # ---------------------------------------------------------------- report
 
 def md(t):
@@ -507,25 +606,30 @@ def report(df, items, results, out, title):
     fam = pd.DataFrame([family_metrics(df[df.family == f], m) for f in FAMILIES if f in set(df.family)
                         for m in present(df)]).round(3)
     included = ", ".join(f"{MODELS[m]['name']} (`{MODELS[m]['model_id']}`)" for m in results if results[m])
+    speed = speed_and_cost(results)
+    not_logged = [r["model"] for _, r in speed.iterrows() if r["requests retried"] == "not logged"] if len(speed) else []
     lines = [f"# {title}", "",
              f"Models: {included} | items: {len(items)} | questions: {len(df)}", "",
-             "## Resumen simple", "",
-             "Accuracy = % de respuestas correctas, con su intervalo de confianza del 95% entre corchetes. En las escalas "
-             "cuenta como acierto quedar a +-1 nivel (el nivel exacto esta en las metricas detalladas). Una negativa a "
-             "responder cuenta como error.", "",
-             "### Accuracy por modelo", md(acc), "",
-             "### ¿Quien es mejor? (diferencias pareadas: mismos items para ambos modelos)", md(verdicts), "",
-             "### ¿Las probabilidades estan calibradas? (solo modelos que dan probabilidades)",
-             "'si' = no se detecta descalibracion mas alla del ruido de muestreo; 'no (p<0.05)' = el modelo esta "
-             "sistematicamente demasiado seguro o inseguro.", md(cal), "",
-             "### Referencia humana (revision a ciegas de una muestra)", md(human_reference()), "",
-             "### Velocidad y costo",
-             "Latencia = solo el intento exitoso (los reintentos por limites de la API no cuentan). Jev y Decisions "
-             "responden todas las preguntas de un item en un request (3 en los tweets); Haiku hace un request por "
-             "pregunta. Las corridas usan concurrencia y dependen de la red: comparar medianas, no valores individuales.",
-             md(speed_and_cost(results)), "",
-             "### Alucinacion: ¿el modelo admite cuando el texto no tiene la respuesta?",
-             "(Haiku no da probabilidades, por eso 'n/a' en H02 sin informacion.)", md(halluc_summary(df)), "",
+             "![summary](summary.png)", "",
+             "## Plain-language summary", "",
+             "Accuracy = share of correct answers, with its 95% confidence interval in brackets (cluster bootstrap over "
+             "tasks). On scales, landing within ±1 level of the correct level counts as correct; the exact level is in "
+             "the detailed metrics below. A refusal or an invalid answer counts as wrong.", "",
+             "### Accuracy per model", md(acc), "",
+             "### Which model is better? (paired differences: both models answered the same items)", md(verdicts), "",
+             "### Are the probabilities calibrated? (only models that return probabilities)",
+             "'yes' = no miscalibration detected beyond sampling noise; 'no (p<0.05)' = the model is systematically "
+             "over- or under-confident.", "", md(cal), "",
+             "### Human reference (blind review of a random sample)", md(human_reference()), "",
+             "### Speed and cost",
+             "Latency = the successful attempt only (back-offs after rate limits are excluded). Jev and Decisions answer "
+             "all questions about an item in one request (3 for tweets); Haiku makes one request per question. Runs are "
+             "concurrent and depend on the network: compare medians, not single values."
+             + (f" {', '.join(not_logged)}: this run predates the retry-free timer, so a request's latency may include "
+                "automatic SDK retries (the median is robust to this; p99 may not be)." if not_logged else ""), "",
+             md(public(speed)), "",
+             "### Hallucination: does the model admit when the text doesn't contain the answer?",
+             "Haiku returns no probabilities, hence 'n/a' for the H02 no-information rows.", "", md(halluc_summary(df)), "",
              "## Primary metrics per model (95% cluster-bootstrap CI; clusters = tasks)", md(public(per_model)), "",
              "## Pairwise comparisons (difference = first minus second model)", md(public(pairs)), "",
              "## All metrics per family and model (point estimates)", md(fam), "",
@@ -542,6 +646,7 @@ def report(df, items, results, out, title):
     df.drop(columns=["options"] + [c for c in df.columns if c.endswith("_probs")], errors="ignore").to_csv(
         out / "item_level.csv", index=False)
     figures(df, out)
+    summary_figure(df, per_model, speed, out)
     print("\n".join(lines[:16]))
     print(f"\n-> {out / 'report.md'}")
     return per_model, pairs

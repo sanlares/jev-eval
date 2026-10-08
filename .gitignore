@@ -8,6 +8,9 @@ __pycache__/
 *.pyc
 .DS_Store
 
-# scratch outputs (the full-run results in results/jev, results/haiku and results/report.md are meant to be committed)
+# scratch outputs (full-run results in results/ are committed)
 results/smoke/
 results/sim_*/
+
+# third-party material kept locally for reference, not redistributed
+external_evals/

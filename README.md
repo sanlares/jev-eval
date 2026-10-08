@@ -116,16 +116,57 @@ miscalibrated (p < 0.001).
 
 ## Results
 
-🚧 **Full run pending.** One-item-per-task smoke runs of all three models completed end to end. These numbers are too
-small to draw conclusions from:
+![Summary: error rate by question type, abstention, latency and cost for Jev, OpenAI Decisions and Claude Haiku 4.5](results/summary.png)
 
-| | requests | valid answers | median latency | cost |
-|---|---|---|---|---|
-| Jev (`jev-1.13.0`) | 33 | 35/35 | 0.29 s | $0.0007 |
-| OpenAI Decisions (`gpt-6-luna`) | 33 | 35/35 | 0.16 s | $0.0010 |
-| Claude Haiku 4.5 | 35 | 35/35 | 1.37 s | $0.016 |
+Full runs on all 1,770 items: 2,070 questions, 2,040 of them with a known correct answer (the 30 "no information"
+questions are scored separately). No failed requests, refusals or invalid answers for any model.
 
-The full report will be published in `results/report.md`.
+| | Jev | OpenAI Decisions | Claude Haiku 4.5 |
+|---|---|---|---|
+| Accuracy: choice (500) | 98.6% | 97.8% | 98.8% |
+| Accuracy: scales, within ±1 level (500) | 100% | 99.8% | 99.2% |
+| Accuracy: yes/no (500) | 99.4% | 98.4% | 99.2% |
+| Accuracy: stock tweets, 3 formats (450) | 98.7% | 98.9% | 99.1% |
+| Total errors (of 2,040) | 18 | 28 | 20 |
+| Probabilities calibrated (of 6 question types) | 4 | 4 | n/a |
+| Says "I can't tell" when the text has no answer: multiple choice / yes-no | 93% / 57% | 93% / 80% | 93% / n/a |
+| Same answer when asked twice (100 items) | 100% | 100% | not tested |
+| Median latency per request | 264 ms | 160 ms | 1,153 ms |
+| Cost per 1,000 questions | $0.018 | $0.028 | $0.45 |
+
+**What the numbers say**
+
+- **Accuracy is a tie.** All three models land at 98–100% on every question type, and no pairwise difference is
+  statistically significant. On clean, well-posed items, a general LLM with constrained output classifies as well as
+  either decision model. This is the ceiling effect the design anticipated.
+- **Speed and cost are not a tie.** Decisions is the fastest (160 ms median per request) and Jev the cheapest
+  ($0.018 per 1,000 questions). Haiku is 4–7x slower and 16–25x more expensive, partly because it needs one
+  request per question.
+- **Calibration mostly holds, with exceptions.** Jev's probabilities pass the calibration test on choice, scales and
+  two tweet formats, but not on yes/no questions or "expects a rise?". Decisions fails on scales and yes/no. Errors
+  happen rarely, but when a model is wrong it is sometimes wrong with 95–100% confidence.
+- **"Not mentioned" is not "no".** When the text gives no basis for a yes/no answer, Decisions usually answers close
+  to 0.5 (80% of cases; exactly 0.50 on 20 of 30). Jev leans towards "no" (mean P(yes) 0.35).
+- **Each model fails in its own way** (all in [`results/cases.md`](results/cases.md)):
+  - All three accept kg and pound weights that don't match as "the same product", with 92–98% confidence.
+  - Decisions reads disgust as anger in 4 texts, and says a cancelled race and a half-built bridge already happened
+    with 97–100% confidence.
+  - Jev reads options slang ("the put wall is getting torn through… bought my first calls") as bearish in all three
+    formats of the same tweet.
+  - Jev and Decisions take a sarcastic tone as a bearish signal.
+  - Haiku underrates experts and routes SSO login problems to `bug_report`.
+- **Some errors are the benchmark's.** 9 of the failing items have a debatable label (too few cues, two emotions at
+  once, news that can be read as mildly negative). They are marked as such.
+
+**Read more**
+
+- [`results/report.md`](results/report.md): every statistic, with confidence intervals, plus breakdowns by
+  difficulty, trap type, length, number of options and task, reliability diagrams and determinism.
+- [`results/cases.md`](results/cases.md): every question that at least one model gets wrong, written out in full
+  (text, question, options, correct answer, each model's answer and confidence) with a verdict, plus hard items all
+  three get right.
+- [`results/item_level.csv`](results/item_level.csv): one row per question with every model's answer, for your own
+  analysis. Raw responses are in `results/{jev,decisions,haiku}/responses.jsonl`.
 
 ## Quickstart
 
@@ -143,12 +184,13 @@ echo "ANTHROPIC_API_KEY=..." >> .env       # for the Haiku baseline
 .venv/bin/python run_decisions.py --repeat 100   # full run (~$0.06) + determinism check
 .venv/bin/python run_baseline.py --smoke   # 1 item per task, ~$0.02
 .venv/bin/python run_baseline.py           # Claude Haiku 4.5 on the same questions (~$1)
-.venv/bin/python analyze.py                # -> results/report.md, reliability.png, risk_coverage.png
+.venv/bin/python analyze.py                # -> results/report.md, summary.png, reliability.png, risk_coverage.png
+.venv/bin/python make_cases.py             # -> results/cases.md (every failing question in full)
 ```
 
 All runners are resumable: re-running skips items that already have an answer.
 
-**Check the labels yourself.** Fill in the `tu_respuesta` column of `data/final/revision_humana.csv` (a blind
+**Check the labels yourself.** Fill in the `tu_respuesta` ("your answer") column of `data/final/revision_humana.csv` (a blind
 sample), then run `python3 build.py human-check`.
 
 ## Repository layout
@@ -161,23 +203,26 @@ run_jev.py        Jev runner (async, resumable, --smoke / --dry-run / --repeat)
 run_decisions.py  OpenAI Decisions runner (same protocol as run_jev.py; Jev questions translated 1:1)
 run_baseline.py   Claude Haiku 4.5 baseline (structured outputs with an enum = always a valid option)
 analyze.py        all models: metrics, cluster bootstrap, pairwise McNemar, calibration test, hallucination,
-                  consistency, determinism, latency and cost, report
+                  consistency, determinism, latency and cost, report and figures
+make_cases.py     results/cases.md: every failing question in full, with a verdict
 data/plan|raw|blind|verify|review   every intermediate step, for full traceability
 data/final/       the benchmark: *.jsonl, *.csv, DATASET.md, revision_humana.csv
-LEEME.md          Spanish guide
+results/          raw responses per model, report.md, cases.md, item_level.csv, figures
 ```
 
 ## Limitations
 
 - **Synthetic, Claude-written text.** Real inputs are messier, so treat the results as performance on clean,
   well-posed items.
-- **Ceiling effect.** Ambiguous items were removed by design, and the blind annotator agreed on almost everything. If
-  both models land near 95%, fine-grained differences will be hard to see. The per-trap and calibration breakdowns are
-  probably more informative than headline accuracy.
+- **Ceiling effect.** Ambiguous items were removed by design, and the blind annotator agreed on almost everything. All
+  three models land at 98–100%, so the benchmark cannot rank them on accuracy. A harder or messier set would be needed
+  for that; the calibration, abstention and error-pattern results are more informative than headline accuracy.
 - **No probabilities from Haiku.** Calibration and the "P ≈ 0.5" hallucination test are reported for Jev and Decisions
   only.
 - **Prompts were written in Jev's format.** The task specs follow TypeSafe's guidance, and the Decisions questions are
   a faithful translation of them. If anything, this format could slightly favour Jev.
 - **Tweets measure expressed sentiment, not future returns.** Predicting returns needs real tweets and real prices.
 - **English only.** Jev's docs state that English is its strongest language.
-- **Decisions is in public beta.** Results reflect `gpt-6-luna` at the time of the run.
+- **Decisions is in public beta.** Results reflect `gpt-6-luna` at the time of the run (October 2026).
+- **Jev's latency was timed before the retry-free timer was added.** A request's time may include automatic SDK
+  retries, and attempts were not logged. The median is robust to this, but Jev's p99 may be slightly inflated.
