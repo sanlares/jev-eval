@@ -11,10 +11,9 @@ import argparse
 import asyncio
 import json
 import random
-import time
 from pathlib import Path
 
-from build import D, load_env, read_jsonl
+from build import D, call_with_retries, load_env, read_jsonl
 from specs import FINAL_N, JEV_MODEL, jev_questions
 
 OUT = Path(__file__).parent / "results" / "jev" / "responses.jsonl"
@@ -50,21 +49,33 @@ def validate(item):
             assert set(q["criteria"]) == {"true", "false"}, f"{task}/{qid}: noul criteria keys"
 
 
+def is_retryable(e):
+    import typesafe_sdk as ts
+    if isinstance(e, (ts.TypeSafeRateLimitError, ts.TypeSafeInternalServerError, ts.TypeSafeAPIConnectionError,
+                      ts.TypeSafeAPITimeoutError)):
+        return True
+    return isinstance(e, ts.TypeSafeAPIError) and (getattr(e, "status_code", 0) or 0) >= 500
+
+
 async def ask(client, sem, item, rep, fout):
+    """One request per item (all of its questions together). Latency = successful attempt only."""
     async with sem:
-        t0 = time.perf_counter()
-        resp = await client.system_one(state=item["state"], questions=sdk_questions(item))
-        rec = {"id": item["id"], "rep": rep, "latency_s": round(time.perf_counter() - t0, 3),
+        resp, latency, attempts = await call_with_retries(
+            lambda: client.system_one(state=item["state"], questions=sdk_questions(item)), is_retryable)
+        rec = {"id": item["id"], "rep": rep, "latency_s": round(latency, 3), "attempts": attempts,
                "response": resp.model_dump(mode="json")}
         fout.write(json.dumps(rec) + "\n")
         fout.flush()
 
 
-def summarize(answers, item):
+def summarize(answers, item, who="jev"):
     """One short human-readable line per question: Jev's answer vs the ground truth."""
     out = []
     for qid, a in answers.items():
         gold = item["targets"][qid] if "targets" in item else item["label"]
+        if a["type"] == "refusal":
+            out.append(f"MAL {item['id']:8s} {qid:12s} gold={json.dumps(gold):18s} REFUSAL")
+            continue
         if a["type"] == "choice":
             pred, extra = a["choice"], f"p={max(a['probabilities'].values()):.2f}"
         elif a["type"] == "score":
@@ -75,14 +86,14 @@ def summarize(answers, item):
         ok = "ok " if gold == "unknown" or pred == gold else "MAL"
         if gold == "unknown":
             ok = "ok " if 0.3 <= a["noul"] <= 0.7 else "MAL"
-        out.append(f"{ok} {item['id']:8s} {qid:12s} gold={json.dumps(gold):18s} jev={json.dumps(pred):18s} {extra}")
+        out.append(f"{ok} {item['id']:8s} {qid:12s} gold={json.dumps(gold):18s} {who}={json.dumps(pred):18s} {extra}")
     return out
 
 
 async def smoke(args):
     """1 random item per task, written to a separate file so the real run is not affected."""
     from collections import defaultdict
-    from typesafe_sdk import AsyncTypeSafeClient
+    from typesafe_sdk import AsyncTypeSafeClient, RetryPolicy
     by_task = defaultdict(list)
     for it in load_items():
         by_task[it["task_id"]].append(it)
@@ -91,7 +102,7 @@ async def smoke(args):
     SMOKE_OUT.parent.mkdir(parents=True, exist_ok=True)
     SMOKE_OUT.write_text("")
     sem = asyncio.Semaphore(args.concurrency)
-    async with AsyncTypeSafeClient(model=JEV_MODEL) as client:
+    async with AsyncTypeSafeClient(model=JEV_MODEL, retry=RetryPolicy(max_retries=0)) as client:
         with open(SMOKE_OUT, "a") as fout:
             res = await asyncio.gather(*(ask(client, sem, it, 0, fout) for it in items), return_exceptions=True)
     errors = [(items[i]["id"], repr(r)) for i, r in enumerate(res) if isinstance(r, Exception)]
@@ -109,7 +120,7 @@ async def smoke(args):
 
 
 async def main(args):
-    from typesafe_sdk import AsyncTypeSafeClient
+    from typesafe_sdk import AsyncTypeSafeClient, RetryPolicy
     items = load_items()
     done = {(r["id"], r["rep"]) for r in read_jsonl(OUT)}
     jobs = [(it, 0) for it in items if (it["id"], 0) not in done]
@@ -120,7 +131,7 @@ async def main(args):
     print(f"{len(items)} items, {len(jobs)} requests to send")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     sem = asyncio.Semaphore(args.concurrency)
-    async with AsyncTypeSafeClient(model=JEV_MODEL) as client:
+    async with AsyncTypeSafeClient(model=JEV_MODEL, retry=RetryPolicy(max_retries=0)) as client:
         with open(OUT, "a") as fout:
             results = await asyncio.gather(*(ask(client, sem, it, rep, fout) for it, rep in jobs),
                                            return_exceptions=True)

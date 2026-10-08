@@ -1,4 +1,4 @@
-# Benchmark para evaluar a Jev (TypeSafe)
+# Benchmark para evaluar a Jev (TypeSafe) y OpenAI Decisions
 
 Un set de preguntas con **respuesta correcta conocida** (ground truth) para medir si Jev clasifica y puntúa tan bien
 como dice, comparado con Claude Haiku 4.5. Todo el texto es sintético, en inglés y con nombres ficticios.
@@ -65,9 +65,11 @@ paso, por tarea, están en `data/final/DATASET.md`.
 cd jev_eval
 export TYPESAFE_API_KEY=...        # console.typesafe.ai
 export ANTHROPIC_API_KEY=...       # para el baseline de Haiku
+export OPENAI_API_KEY=...          # para OpenAI Decisions (también se leen solas desde jev_eval/.env)
 .venv/bin/python run_jev.py --dry-run          # valida todo sin gastar
 .venv/bin/python run_jev.py --repeat 100       # Jev (cuesta menos de US$0,05); repite 100 ítems para ver si es determinista
-.venv/bin/python run_baseline.py               # Haiku 4.5 (aprox. US$1-2)
+.venv/bin/python run_decisions.py --repeat 100 # OpenAI Decisions (gpt-6-luna), aprox. US$0,06
+.venv/bin/python run_baseline.py               # Haiku 4.5 (aprox. US$1)
 .venv/bin/python analyze.py                    # genera results/report.md
 ```
 

@@ -40,6 +40,22 @@ def load_env():
         os.environ["TYPESAFE_API_KEY"] = os.environ["JET_KEY"]
 
 
+async def call_with_retries(make_call, is_retryable, max_attempts=6):
+    """Run `await make_call()` with our own retry loop (SDK retries are turned off so they can't hide in the timing).
+    Returns (result, latency in seconds of the successful attempt only, number of attempts)."""
+    import asyncio
+    import time
+    for attempt in range(1, max_attempts + 1):
+        t0 = time.perf_counter()
+        try:
+            result = await make_call()
+            return result, time.perf_counter() - t0, attempt
+        except Exception as e:  # noqa: BLE001 - re-raised below unless the caller says it is retryable
+            if attempt == max_attempts or not is_retryable(e):
+                raise
+            await asyncio.sleep(min(30.0, 0.5 * 2 ** (attempt - 1)) + random.random() * 0.25)
+
+
 def read_jsonl(p):
     p = Path(p)
     return [json.loads(l) for l in p.read_text().splitlines() if l.strip()] if p.exists() else []
