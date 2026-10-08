@@ -350,9 +350,10 @@ def determinism(results):
                 if x["type"] == "noul":
                     maxdiff = max(maxdiff, abs(x["noul"] - y["noul"]))
                     same += (x["noul"] >= .5) == (y["noul"] >= .5)
-                else:
-                    maxdiff = max(maxdiff, max(abs(x["probabilities"][k] - y["probabilities"].get(k, 0)) for k in x["probabilities"]))
-                    same += x.get("choice", x.get("score")) == y.get("choice", y.get("score"))
+                else:  # same chosen option / same most likely level (not the float expected score)
+                    px, py = x["probabilities"], y["probabilities"]
+                    maxdiff = max(maxdiff, max(abs(px[k] - py.get(k, 0)) for k in px))
+                    same += max(px, key=px.get) == max(py, key=py.get)
         out[MODELS[m]["name"]] = {"repeated_items": len(pairs), "same_answer_rate": round(same / nq, 4),
                                   "max_prob_abs_diff": round(maxdiff, 4)}
     return out
